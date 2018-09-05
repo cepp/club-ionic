@@ -1,0 +1,23 @@
+page-notificacao {
+
+  .notificacao {
+    fa-icon {
+      font-size: large;
+    }
+    h2 {
+      font-weight: bolder;
+      padding-bottom: 2px;
+      font-size: small;
+    }
+
+    h5 {
+      font-weight: bold;
+      text-decoration-color: #b2b2b2;
+      font-size: smaller;
+    }
+  }
+
+  .lido {
+    color: #b2b2b2;
+  }
+}

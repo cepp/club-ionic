@@ -1,0 +1,48 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Emitir Convite</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <form [formGroup]="formGroup" (ngSubmit)="emitir()">
+            <ion-item-divider color="light">Dados Sócio</ion-item-divider>
+            <ion-item>
+                <ion-label floating>Matrícula</ion-label>
+                <ion-input type="text" [readonly]="true" [value]="convite.socio?.matricula"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Nome</ion-label>
+                <ion-input type="text" [readonly]="true" [value]="convite.socio?.pessoa.nome"></ion-input>
+            </ion-item>
+
+            <ion-item-divider color="light">Dados Convidado</ion-item-divider>
+            <ion-item>
+                <ion-label floating>Convidado</ion-label>
+                <ion-input type="text" [readonly]="true" [value]="convite.convidado.nome"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>CPF</ion-label>
+                <ion-input type="text" [readonly]="true" [value]="convite.convidado.cpfFormatado"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Data Convite</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMM YYYY" formControlName="dataConvite"
+                              required monthShortNames="Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez"
+                              doneText="Confirmar" cancelText="Cancelar"></ion-datetime>
+            </ion-item>
+
+            <div padding>
+                <button ion-button block type="submit">Confirmar</button>
+                <button ion-button block color="light" (click)="cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </ion-list>
+</ion-content>
+

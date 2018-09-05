@@ -1,0 +1,35 @@
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Autenticação</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card class="ion-card" padding>
+        <ion-list>
+            <form [formGroup]="form" (ngSubmit)="autenticar()">
+                <ion-item>
+                    <ion-label floating>Usuário/CPF</ion-label>
+                    <ion-input type="text" formControlName="login" id="login" required></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label floating>Senha</ion-label>
+                    <ion-input type="password" formControlName="senha" required></ion-input>
+                </ion-item>
+
+                <div padding>
+                    <button ion-button block type="submit" [disabled]="!form.valid">Entrar</button>
+                    <button ion-button block color="light" (click)="cancelar()">Cancelar</button>
+                </div>
+            </form>
+        </ion-list>
+    </ion-card>
+
+</ion-content>

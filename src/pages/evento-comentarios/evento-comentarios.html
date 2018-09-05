@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Comentários</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-item text-wrap *ngFor="let comentario of socialComentarios">
+            <ion-avatar item-start>
+                <img [src]="mostrarImagemDatabase(comentario.socio.pessoa.foto)">
+            </ion-avatar>
+            <b>{{comentario.socio.pessoa.nome}}</b> {{comentario.comentario}}
+        </ion-item>
+        <ion-item-divider></ion-item-divider>
+        <ion-item class="comentario">
+            <ion-input type="text" id="comentario" placeholder="Comentário" icon-left></ion-input>
+            <ion-icon name="fa-commenting" item-left></ion-icon>
+        </ion-item>
+    </ion-card>
+</ion-content>

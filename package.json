@@ -1,0 +1,85 @@
+{
+  "name": "club-mobile",
+  "version": "0.0.1",
+  "author": "Carlos Pina Pantoja",
+  "homepage": "​http://br.linkedin.com/in/ceppantoja",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/animations": "5.2.9",
+    "@angular/common": "5.2.9",
+    "@angular/compiler": "5.2.9",
+    "@angular/compiler-cli": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@angular/forms": "5.2.9",
+    "@angular/http": "5.2.9",
+    "@angular/platform-browser": "5.2.9",
+    "@angular/platform-browser-dynamic": "5.2.9",
+    "@ionic-native/core": "4.6.0",
+    "@ionic-native/firebase": "^4.6.0",
+    "@ionic-native/push": "^4.6.0",
+    "@ionic-native/splash-screen": "4.6.0",
+    "@ionic-native/status-bar": "4.6.0",
+    "@ionic/storage": "2.1.3",
+    "cordova": "^8.0.0",
+    "cordova-android": "~7.1.0",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-facebook4": "^2.0.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.2.1",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-sqlite-storage": "^2.3.1",
+    "date-and-time": "^0.6.2",
+    "font-awesome": "4.7.0",
+    "ionic": "^3.20.0",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "phonegap-plugin-push": "^2.2.2",
+    "primeng": "^5.2.4",
+    "rxjs": "5.5.8",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.20",
+    "cordova-ios": "~4.5.4"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.1.8",
+    "@ionic/lab": "1.0.9",
+    "json-server": "^0.14.0",
+    "typescript": "~2.6.2"
+  },
+  "description": "Aplicativo móvel do clube",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "phonegap-plugin-push": {
+        "SENDER_ID": "*****",
+        "ANDROID_SUPPORT_V13_VERSION": "27.+",
+        "FCM_VERSION": "11.6.2"
+      },
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "******",
+        "APP_NAME": "br.com.cepp.club.mobile"
+      }
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "config": {
+    "ionic_copy": "./config/copy.config.js",
+    "ionic_sass": "./config/sass.config.js"
+  }
+}

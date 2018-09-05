@@ -1,0 +1,39 @@
+page-evento-comentarios {
+  ion-card {
+    ion-item {
+      ion-avatar {
+        height: 3vw;
+        width: 3vw;
+        border: 1px solid #4c84c8;
+        border-radius: 70%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .label {
+        border-bottom: 1px solid #dbdbdf !important;
+        font-size: x-small;
+        b {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .comentario {
+    background: #dedede;
+    ion-icon {
+      color: #b8b8b8 !important;
+      font-size: large;
+      vertical-align: middle;
+      padding-top: 3px;
+      padding-right: 0px;
+    }
+    ion-input {
+      background: #dedede;
+      font-size: 13px; //sets text font size
+      ::placeholder {
+        font-size: 10px; //sets placeholder font size
+      }
+    }
+  }
+}

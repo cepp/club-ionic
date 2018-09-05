@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Curtidas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item text-wrap *ngFor="let curtida of socialCurtidas">
+      <ion-avatar item-start>
+        <img [src]="mostrarImagemDatabase(curtida.socio.pessoa.foto)">
+      </ion-avatar>
+      <h2>{{curtida.socio.pessoa.nome}}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle start>
+            <ion-icon name="fa-bars"></ion-icon>
+        </button>
+        <ion-title>Eventos</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let evento of eventos">
+
+        <img [src]="mostrarImagemDatabase(evento.foto)">
+
+        <ion-item>
+            <ion-icon name="fa-ticket" size="2x" item-start></ion-icon>
+            <h2>{{evento.titulo}}</h2>
+            <p>{{evento.dataEvento | date:'dd/MM/yyyy'}}</p>
+        </ion-item>
+
+        <ion-card-content>
+            <p>{{evento.descricaoEvento}}</p>
+        </ion-card-content>
+
+        <ion-list>
+            <ion-item *ngFor="let area of evento.areaEventoDTO">
+                <h5>{{area.descricao}}</h5>
+                <button ion-button outline item-end icon-left round>
+                    <ion-icon name="fa-tag"></ion-icon>
+                    {{area.valorAtualConvite | currency: 'R$ ':2}}
+                </button>
+            </ion-item>
+        </ion-list>
+
+        <ion-row *ngIf="evento.social?.curtidas.length > 0" class="social-curtir" (click)="mostrarCurtidas(evento.social?.curtidas, evento.codigoEvento)">
+            <ion-col>
+                <ion-item clear>
+                    {{evento.social?.curtidas.length}} Curtidas
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="social-controle">
+            <ion-col>
+                <button ion-button icon-left clear (click)="curtirEvento(evento)">
+                    <ion-icon [name]="evento.social?.iconeCurtida"></ion-icon>
+                    Curtir
+                </button>
+                <button ion-button icon-left clear (click)="mostrarComentarios(evento.social?.comentarios, evento.codigoEvento)">
+                    <ion-icon [name]="evento.social?.iconeComentario"></ion-icon>
+                    Comentar
+                </button>
+                <button ion-button icon-left clear (click)="abrirCompartilhamento(evento)">
+                    <ion-icon name="fa-share-alt"></ion-icon>
+                    Compartilhar
+                </button>
+            </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="evento.social?.comentarios.length > 0" class="social-comentario" (click)="mostrarComentarios(evento.social?.comentarios, evento.codigoEvento)">
+            <ion-col>
+                <ion-item clear>
+                    Ver todos os {{evento.social?.comentarios.length}} comentários...
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
+
+    <ion-card *ngIf="eventos.length == 0" padding>
+        Ainda não existe eventos programados para os próximos 5 meses
+    </ion-card>
+</ion-content>

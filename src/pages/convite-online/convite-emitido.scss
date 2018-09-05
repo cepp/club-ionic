@@ -1,0 +1,36 @@
+
+ion-list {
+  ion-item-group {
+    ion-item-divider {
+      font-weight: bolder;
+      font-size: small;
+      border-left: 5px solid coral;
+    }
+
+    ion-item-sliding {
+      ion-item {
+        ion-avatar {
+          height: 3vw;
+          width: 3vw;
+          border: 1px solid #4c84c8;
+          border-radius: 70%;
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .label {
+          h2 {
+            padding-top: 3px;
+            font-weight: bold;
+            font-size: small;
+          }
+          h4 {
+            font-size: smaller;
+            font-weight: lighter;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
+  }
+}

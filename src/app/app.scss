@@ -1,0 +1,5242 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.custom-avatar {
+  height: 20vw;
+  width: 20vw;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-controle {
+  ion-col {
+    padding: 1px;
+    button {
+      font-size: x-small;
+      padding-right: 2px;
+    }
+  }
+}
+
+.social-comentario {
+  ion-col {
+    padding: 1px;
+    ion-item {
+      font-size: x-small;
+      color: #aaaaaa;
+      vertical-align: top;
+      height: 20px;
+      .input-wrapper {
+        height: 20px;
+      }
+      ion-label {
+        margin: 0px !important;
+      }
+    }
+  }
+}
+
+.social-curtir {
+  ion-col {
+    padding: 1px;
+    height: 30px;
+    ion-item {
+      font-size: x-small;
+      color: #4c84c8;
+      font-weight: bold;
+    }
+  }
+}
+
+.notificacao-badge {
+  background-color: red;
+  position: absolute;
+  border-radius: 100%;
+}
+
+#menuPadrao {
+  ion-header {
+    ion-card {
+      background: #f4f4f5;
+      border-radius: 5%;
+      h4 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: smaller;
+      }
+    }
+    ion-toolbar {
+      .toolbar-background {
+        background: #4c84c8 !important;
+      }
+      .toolbar-title {
+        font-weight: bold;
+        color: #e8e8e8;
+        text-align: center;
+      }
+    }
+  }
+
+  ion-content {
+    background: linear-gradient(to bottom, #4c84c8 0%,#89b3d6 50%,#b9d2e5 100%);
+    ion-list {
+      button {
+        border-left: 3px solid #1958b7;
+        background: #f4f4f5;
+        font-weight: bold;
+        font-size: small;
+        color: #444444;
+      }
+    }
+  }
+}
+
+ion-header {
+  ion-card {
+    background: #f4f4f5;
+    border-radius: 5%;
+    h4 {
+      text-align: center;
+      font-weight: bolder;
+      font-size: smaller;
+    }
+  }
+  ion-navbar {
+    .toolbar-background{
+      background: #4c84c8 !important;
+    }
+    .toolbar-title {
+      font-weight: bold;
+      color: #e8e8e8;
+    }
+    .bar-button {
+      font-weight: bold;
+      color: #e8e8e8;
+    }
+  }
+}
+
+#menuSocio {
+  ion-header {
+    ion-card {
+      background: #f4f4f5;
+      border-radius: 5%;
+      h4 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: smaller;
+      }
+    }
+  }
+
+  ion-content {
+    background: linear-gradient(to bottom, #4c84c8 0%,#89b3d6 50%,#b9d2e5 100%);
+    ion-list {
+      button {
+        border-left: 3px solid #1958b7;
+        background: #f4f4f5;
+        font-weight: bold;
+        font-size: small;
+        color: #444444;
+      }
+    }
+  }
+}
+
+.toast-error {
+  .toast-wrapper {
+    background: indianred;
+    color: #444444;
+    text-align: center;
+  }
+}
+
+.toast-warn {
+  .toast-wrapper {
+    background: lightgoldenrodyellow;
+    text-align: center;
+  }
+  .toast-message {
+    color: #444444;
+  }
+  .toast-button {
+    color: #444444;
+  }
+}
+
+.toast-success {
+  .toast-wrapper {
+    background: #9eeeb6;
+    text-align: center;
+  }
+  .toast-message {
+    color: #444444;
+  }
+  .toast-button {
+    color: #444444;
+  }
+}
+
+.toast-info {
+  .toast-wrapper {
+    background: #5188B5;
+    text-align: center;
+  }
+}
+
+ion-content {
+  background: linear-gradient(to bottom, #4c84c8 0%, #89b3d6 50%, #b9d2e5 100%);
+  ion-list {
+    button {
+      background: #f4f4f5;
+      font-weight: bold;
+      font-size: small;
+      color: #444444;
+    }
+  }
+
+  ion-card {
+    .icon {
+      color: #4c84c8 !important;
+    }
+  }
+}
+
+.fa-icons-general {
+  font-family: "FontAwesome";
+}
+
+.ion-md-fa-glass:before {
+  @extend .fa-icons-general;
+  content: "\f000";
+}
+.ion-md-fa-music:before {
+  @extend .fa-icons-general;
+  content: "\f001";
+}
+.ion-md-fa-search:before {
+  @extend .fa-icons-general;
+  content: "\f002";
+}
+.ion-md-fa-envelope-o:before {
+  @extend .fa-icons-general;
+  content: "\f003";
+}
+.ion-md-fa-heart:before {
+  @extend .fa-icons-general;
+  content: "\f004";
+}
+.ion-md-fa-star:before {
+  @extend .fa-icons-general;
+  content: "\f005";
+}
+.ion-md-fa-star-o:before {
+  @extend .fa-icons-general;
+  content: "\f006";
+}
+.ion-md-fa-user:before {
+  @extend .fa-icons-general;
+  content: "\f007";
+}
+.ion-md-fa-film:before {
+  @extend .fa-icons-general;
+  content: "\f008";
+}
+.ion-md-fa-th-large:before {
+  @extend .fa-icons-general;
+  content: "\f009";
+}
+.ion-md-fa-th:before {
+  @extend .fa-icons-general;
+  content: "\f00a";
+}
+.ion-md-fa-th-list:before {
+  @extend .fa-icons-general;
+  content: "\f00b";
+}
+.ion-md-fa-check:before {
+  @extend .fa-icons-general;
+  content: "\f00c";
+}
+.ion-md-fa-remove:before,
+.ion-md-fa-close:before,
+.ion-md-fa-times:before {
+  @extend .fa-icons-general;
+  content: "\f00d";
+}
+.ion-md-fa-search-plus:before {
+  @extend .fa-icons-general;
+  content: "\f00e";
+}
+.ion-md-fa-search-minus:before {
+  @extend .fa-icons-general;
+  content: "\f010";
+}
+.ion-md-fa-power-off:before {
+  @extend .fa-icons-general;
+  content: "\f011";
+}
+.ion-md-fa-signal:before {
+  @extend .fa-icons-general;
+  content: "\f012";
+}
+.ion-md-fa-gear:before,
+.ion-md-fa-cog:before {
+  @extend .fa-icons-general;
+  content: "\f013";
+}
+.ion-md-fa-trash-o:before {
+  @extend .fa-icons-general;
+  content: "\f014";
+}
+.ion-md-fa-home:before {
+  @extend .fa-icons-general;
+  content: "\f015";
+}
+.ion-md-fa-file-o:before {
+  @extend .fa-icons-general;
+  content: "\f016";
+}
+.ion-md-fa-clock-o:before {
+  @extend .fa-icons-general;
+  content: "\f017";
+}
+.ion-md-fa-road:before {
+  @extend .fa-icons-general;
+  content: "\f018";
+}
+.ion-md-fa-download:before {
+  @extend .fa-icons-general;
+  content: "\f019";
+}
+.ion-md-fa-arrow-circle-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f01a";
+}
+.ion-md-fa-arrow-circle-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f01b";
+}
+.ion-md-fa-inbox:before {
+  @extend .fa-icons-general;
+  content: "\f01c";
+}
+.ion-md-fa-play-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f01d";
+}
+.ion-md-fa-rotate-right:before,
+.ion-md-fa-repeat:before {
+  @extend .fa-icons-general;
+  content: "\f01e";
+}
+.ion-md-fa-refresh:before {
+  @extend .fa-icons-general;
+  content: "\f021";
+}
+.ion-md-fa-list-alt:before {
+  @extend .fa-icons-general;
+  content: "\f022";
+}
+.ion-md-fa-lock:before {
+  @extend .fa-icons-general;
+  content: "\f023";
+}
+.ion-md-fa-flag:before {
+  @extend .fa-icons-general;
+  content: "\f024";
+}
+.ion-md-fa-headphones:before {
+  @extend .fa-icons-general;
+  content: "\f025";
+}
+.ion-md-fa-volume-off:before {
+  @extend .fa-icons-general;
+  content: "\f026";
+}
+.ion-md-fa-volume-down:before {
+  @extend .fa-icons-general;
+  content: "\f027";
+}
+.ion-md-fa-volume-up:before {
+  @extend .fa-icons-general;
+  content: "\f028";
+}
+.ion-md-fa-qrcode:before {
+  @extend .fa-icons-general;
+  content: "\f029";
+}
+.ion-md-fa-barcode:before {
+  @extend .fa-icons-general;
+  content: "\f02a";
+}
+.ion-md-fa-tag:before {
+  @extend .fa-icons-general;
+  content: "\f02b";
+}
+.ion-md-fa-tags:before {
+  @extend .fa-icons-general;
+  content: "\f02c";
+}
+.ion-md-fa-book:before {
+  @extend .fa-icons-general;
+  content: "\f02d";
+}
+.ion-md-fa-bookmark:before {
+  @extend .fa-icons-general;
+  content: "\f02e";
+}
+.ion-md-fa-print:before {
+  @extend .fa-icons-general;
+  content: "\f02f";
+}
+.ion-md-fa-camera:before {
+  @extend .fa-icons-general;
+  content: "\f030";
+}
+.ion-md-fa-font:before {
+  @extend .fa-icons-general;
+  content: "\f031";
+}
+.ion-md-fa-bold:before {
+  @extend .fa-icons-general;
+  content: "\f032";
+}
+.ion-md-fa-italic:before {
+  @extend .fa-icons-general;
+  content: "\f033";
+}
+.ion-md-fa-text-height:before {
+  @extend .fa-icons-general;
+  content: "\f034";
+}
+.ion-md-fa-text-width:before {
+  @extend .fa-icons-general;
+  content: "\f035";
+}
+.ion-md-fa-align-left:before {
+  @extend .fa-icons-general;
+  content: "\f036";
+}
+.ion-md-fa-align-center:before {
+  @extend .fa-icons-general;
+  content: "\f037";
+}
+.ion-md-fa-align-right:before {
+  @extend .fa-icons-general;
+  content: "\f038";
+}
+.ion-md-fa-align-justify:before {
+  @extend .fa-icons-general;
+  content: "\f039";
+}
+.ion-md-fa-list:before {
+  @extend .fa-icons-general;
+  content: "\f03a";
+}
+.ion-md-fa-dedent:before,
+.ion-md-fa-outdent:before {
+  @extend .fa-icons-general;
+  content: "\f03b";
+}
+.ion-md-fa-indent:before {
+  @extend .fa-icons-general;
+  content: "\f03c";
+}
+.ion-md-fa-video-camera:before {
+  @extend .fa-icons-general;
+  content: "\f03d";
+}
+.ion-md-fa-photo:before,
+.ion-md-fa-image:before,
+.ion-md-fa-picture-o:before {
+  @extend .fa-icons-general;
+  content: "\f03e";
+}
+.ion-md-fa-pencil:before {
+  @extend .fa-icons-general;
+  content: "\f040";
+}
+.ion-md-fa-map-marker:before {
+  @extend .fa-icons-general;
+  content: "\f041";
+}
+.ion-md-fa-adjust:before {
+  @extend .fa-icons-general;
+  content: "\f042";
+}
+.ion-md-fa-tint:before {
+  @extend .fa-icons-general;
+  content: "\f043";
+}
+.ion-md-fa-edit:before,
+.ion-md-fa-pencil-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f044";
+}
+.ion-md-fa-share-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f045";
+}
+.ion-md-fa-check-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f046";
+}
+.ion-md-fa-arrows:before {
+  @extend .fa-icons-general;
+  content: "\f047";
+}
+.ion-md-fa-step-backward:before {
+  @extend .fa-icons-general;
+  content: "\f048";
+}
+.ion-md-fa-fast-backward:before {
+  @extend .fa-icons-general;
+  content: "\f049";
+}
+.ion-md-fa-backward:before {
+  @extend .fa-icons-general;
+  content: "\f04a";
+}
+.ion-md-fa-play:before {
+  @extend .fa-icons-general;
+  content: "\f04b";
+}
+.ion-md-fa-pause:before {
+  @extend .fa-icons-general;
+  content: "\f04c";
+}
+.ion-md-fa-stop:before {
+  @extend .fa-icons-general;
+  content: "\f04d";
+}
+.ion-md-fa-forward:before {
+  @extend .fa-icons-general;
+  content: "\f04e";
+}
+.ion-md-fa-fast-forward:before {
+  @extend .fa-icons-general;
+  content: "\f050";
+}
+.ion-md-fa-step-forward:before {
+  @extend .fa-icons-general;
+  content: "\f051";
+}
+.ion-md-fa-eject:before {
+  @extend .fa-icons-general;
+  content: "\f052";
+}
+.ion-md-fa-chevron-left:before {
+  @extend .fa-icons-general;
+  content: "\f053";
+}
+.ion-md-fa-chevron-right:before {
+  @extend .fa-icons-general;
+  content: "\f054";
+}
+.ion-md-fa-plus-circle:before {
+  @extend .fa-icons-general;
+  content: "\f055";
+}
+.ion-md-fa-minus-circle:before {
+  @extend .fa-icons-general;
+  content: "\f056";
+}
+.ion-md-fa-times-circle:before {
+  @extend .fa-icons-general;
+  content: "\f057";
+}
+.ion-md-fa-check-circle:before {
+  @extend .fa-icons-general;
+  content: "\f058";
+}
+.ion-md-fa-question-circle:before {
+  @extend .fa-icons-general;
+  content: "\f059";
+}
+.ion-md-fa-info-circle:before {
+  @extend .fa-icons-general;
+  content: "\f05a";
+}
+.ion-md-fa-crosshairs:before {
+  @extend .fa-icons-general;
+  content: "\f05b";
+}
+.ion-md-fa-times-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f05c";
+}
+.ion-md-fa-check-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f05d";
+}
+.ion-md-fa-ban:before {
+  @extend .fa-icons-general;
+  content: "\f05e";
+}
+.ion-md-fa-arrow-left:before {
+  @extend .fa-icons-general;
+  content: "\f060";
+}
+.ion-md-fa-arrow-right:before {
+  @extend .fa-icons-general;
+  content: "\f061";
+}
+.ion-md-fa-arrow-up:before {
+  @extend .fa-icons-general;
+  content: "\f062";
+}
+.ion-md-fa-arrow-down:before {
+  @extend .fa-icons-general;
+  content: "\f063";
+}
+.ion-md-fa-mail-forward:before,
+.ion-md-fa-share:before {
+  @extend .fa-icons-general;
+  content: "\f064";
+}
+.ion-md-fa-expand:before {
+  @extend .fa-icons-general;
+  content: "\f065";
+}
+.ion-md-fa-compress:before {
+  @extend .fa-icons-general;
+  content: "\f066";
+}
+.ion-md-fa-plus:before {
+  @extend .fa-icons-general;
+  content: "\f067";
+}
+.ion-md-fa-minus:before {
+  @extend .fa-icons-general;
+  content: "\f068";
+}
+.ion-md-fa-asterisk:before {
+  @extend .fa-icons-general;
+  content: "\f069";
+}
+.ion-md-fa-exclamation-circle:before {
+  @extend .fa-icons-general;
+  content: "\f06a";
+}
+.ion-md-fa-gift:before {
+  @extend .fa-icons-general;
+  content: "\f06b";
+}
+.ion-md-fa-leaf:before {
+  @extend .fa-icons-general;
+  content: "\f06c";
+}
+.ion-md-fa-fire:before {
+  @extend .fa-icons-general;
+  content: "\f06d";
+}
+.ion-md-fa-eye:before {
+  @extend .fa-icons-general;
+  content: "\f06e";
+}
+.ion-md-fa-eye-slash:before {
+  @extend .fa-icons-general;
+  content: "\f070";
+}
+.ion-md-fa-warning:before,
+.ion-md-fa-exclamation-triangle:before {
+  @extend .fa-icons-general;
+  content: "\f071";
+}
+.ion-md-fa-plane:before {
+  @extend .fa-icons-general;
+  content: "\f072";
+}
+.ion-md-fa-calendar:before {
+  @extend .fa-icons-general;
+  content: "\f073";
+}
+.ion-md-fa-random:before {
+  @extend .fa-icons-general;
+  content: "\f074";
+}
+.ion-md-fa-comment:before {
+  @extend .fa-icons-general;
+  content: "\f075";
+}
+.ion-md-fa-magnet:before {
+  @extend .fa-icons-general;
+  content: "\f076";
+}
+.ion-md-fa-chevron-up:before {
+  @extend .fa-icons-general;
+  content: "\f077";
+}
+.ion-md-fa-chevron-down:before {
+  @extend .fa-icons-general;
+  content: "\f078";
+}
+.ion-md-fa-retweet:before {
+  @extend .fa-icons-general;
+  content: "\f079";
+}
+.ion-md-fa-shopping-cart:before {
+  @extend .fa-icons-general;
+  content: "\f07a";
+}
+.ion-md-fa-folder:before {
+  @extend .fa-icons-general;
+  content: "\f07b";
+}
+.ion-md-fa-folder-open:before {
+  @extend .fa-icons-general;
+  content: "\f07c";
+}
+.ion-md-fa-arrows-v:before {
+  @extend .fa-icons-general;
+  content: "\f07d";
+}
+.ion-md-fa-arrows-h:before {
+  @extend .fa-icons-general;
+  content: "\f07e";
+}
+.ion-md-fa-bar-chart-o:before,
+.ion-md-fa-bar-chart:before {
+  @extend .fa-icons-general;
+  content: "\f080";
+}
+.ion-md-fa-twitter-square:before {
+  @extend .fa-icons-general;
+  content: "\f081";
+}
+.ion-md-fa-facebook-square:before {
+  @extend .fa-icons-general;
+  content: "\f082";
+}
+.ion-md-fa-camera-retro:before {
+  @extend .fa-icons-general;
+  content: "\f083";
+}
+.ion-md-fa-key:before {
+  @extend .fa-icons-general;
+  content: "\f084";
+}
+.ion-md-fa-gears:before,
+.ion-md-fa-cogs:before {
+  @extend .fa-icons-general;
+  content: "\f085";
+}
+.ion-md-fa-comments:before {
+  @extend .fa-icons-general;
+  content: "\f086";
+}
+.ion-md-fa-thumbs-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f087";
+}
+.ion-md-fa-thumbs-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f088";
+}
+.ion-md-fa-star-half:before {
+  @extend .fa-icons-general;
+  content: "\f089";
+}
+.ion-md-fa-heart-o:before {
+  @extend .fa-icons-general;
+  content: "\f08a";
+}
+.ion-md-fa-sign-out:before {
+  @extend .fa-icons-general;
+  content: "\f08b";
+}
+.ion-md-fa-linkedin-square:before {
+  @extend .fa-icons-general;
+  content: "\f08c";
+}
+.ion-md-fa-thumb-tack:before {
+  @extend .fa-icons-general;
+  content: "\f08d";
+}
+.ion-md-fa-external-link:before {
+  @extend .fa-icons-general;
+  content: "\f08e";
+}
+.ion-md-fa-sign-in:before {
+  @extend .fa-icons-general;
+  content: "\f090";
+}
+.ion-md-fa-trophy:before {
+  @extend .fa-icons-general;
+  content: "\f091";
+}
+.ion-md-fa-github-square:before {
+  @extend .fa-icons-general;
+  content: "\f092";
+}
+.ion-md-fa-upload:before {
+  @extend .fa-icons-general;
+  content: "\f093";
+}
+.ion-md-fa-lemon-o:before {
+  @extend .fa-icons-general;
+  content: "\f094";
+}
+.ion-md-fa-phone:before {
+  @extend .fa-icons-general;
+  content: "\f095";
+}
+.ion-md-fa-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f096";
+}
+.ion-md-fa-bookmark-o:before {
+  @extend .fa-icons-general;
+  content: "\f097";
+}
+.ion-md-fa-phone-square:before {
+  @extend .fa-icons-general;
+  content: "\f098";
+}
+.ion-md-fa-twitter:before {
+  @extend .fa-icons-general;
+  content: "\f099";
+}
+.ion-md-fa-facebook-f:before,
+.ion-md-fa-facebook:before {
+  @extend .fa-icons-general;
+  content: "\f09a";
+}
+.ion-md-fa-github:before {
+  @extend .fa-icons-general;
+  content: "\f09b";
+}
+.ion-md-fa-unlock:before {
+  @extend .fa-icons-general;
+  content: "\f09c";
+}
+.ion-md-fa-credit-card:before {
+  @extend .fa-icons-general;
+  content: "\f09d";
+}
+.ion-md-fa-feed:before,
+.ion-md-fa-rss:before {
+  @extend .fa-icons-general;
+  content: "\f09e";
+}
+.ion-md-fa-hdd-o:before {
+  @extend .fa-icons-general;
+  content: "\f0a0";
+}
+.ion-md-fa-bullhorn:before {
+  @extend .fa-icons-general;
+  content: "\f0a1";
+}
+.ion-md-fa-bell:before {
+  @extend .fa-icons-general;
+  content: "\f0f3";
+}
+.ion-md-fa-certificate:before {
+  @extend .fa-icons-general;
+  content: "\f0a3";
+}
+.ion-md-fa-hand-o-right:before {
+  @extend .fa-icons-general;
+  content: "\f0a4";
+}
+.ion-md-fa-hand-o-left:before {
+  @extend .fa-icons-general;
+  content: "\f0a5";
+}
+.ion-md-fa-hand-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f0a6";
+}
+.ion-md-fa-hand-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f0a7";
+}
+.ion-md-fa-arrow-circle-left:before {
+  @extend .fa-icons-general;
+  content: "\f0a8";
+}
+.ion-md-fa-arrow-circle-right:before {
+  @extend .fa-icons-general;
+  content: "\f0a9";
+}
+.ion-md-fa-arrow-circle-up:before {
+  @extend .fa-icons-general;
+  content: "\f0aa";
+}
+.ion-md-fa-arrow-circle-down:before {
+  @extend .fa-icons-general;
+  content: "\f0ab";
+}
+.ion-md-fa-globe:before {
+  @extend .fa-icons-general;
+  content: "\f0ac";
+}
+.ion-md-fa-wrench:before {
+  @extend .fa-icons-general;
+  content: "\f0ad";
+}
+.ion-md-fa-tasks:before {
+  @extend .fa-icons-general;
+  content: "\f0ae";
+}
+.ion-md-fa-filter:before {
+  @extend .fa-icons-general;
+  content: "\f0b0";
+}
+.ion-md-fa-briefcase:before {
+  @extend .fa-icons-general;
+  content: "\f0b1";
+}
+.ion-md-fa-arrows-alt:before {
+  @extend .fa-icons-general;
+  content: "\f0b2";
+}
+.ion-md-fa-group:before,
+.ion-md-fa-users:before {
+  @extend .fa-icons-general;
+  content: "\f0c0";
+}
+.ion-md-fa-chain:before,
+.ion-md-fa-link:before {
+  @extend .fa-icons-general;
+  content: "\f0c1";
+}
+.ion-md-fa-cloud:before {
+  @extend .fa-icons-general;
+  content: "\f0c2";
+}
+.ion-md-fa-flask:before {
+  @extend .fa-icons-general;
+  content: "\f0c3";
+}
+.ion-md-fa-cut:before,
+.ion-md-fa-scissors:before {
+  @extend .fa-icons-general;
+  content: "\f0c4";
+}
+.ion-md-fa-copy:before,
+.ion-md-fa-files-o:before {
+  @extend .fa-icons-general;
+  content: "\f0c5";
+}
+.ion-md-fa-paperclip:before {
+  @extend .fa-icons-general;
+  content: "\f0c6";
+}
+.ion-md-fa-save:before,
+.ion-md-fa-floppy-o:before {
+  @extend .fa-icons-general;
+  content: "\f0c7";
+}
+.ion-md-fa-square:before {
+  @extend .fa-icons-general;
+  content: "\f0c8";
+}
+.ion-md-fa-navicon:before,
+.ion-md-fa-reorder:before,
+.ion-md-fa-bars:before {
+  @extend .fa-icons-general;
+  content: "\f0c9";
+}
+.ion-md-fa-list-ul:before {
+  @extend .fa-icons-general;
+  content: "\f0ca";
+}
+.ion-md-fa-list-ol:before {
+  @extend .fa-icons-general;
+  content: "\f0cb";
+}
+.ion-md-fa-strikethrough:before {
+  @extend .fa-icons-general;
+  content: "\f0cc";
+}
+.ion-md-fa-underline:before {
+  @extend .fa-icons-general;
+  content: "\f0cd";
+}
+.ion-md-fa-table:before {
+  @extend .fa-icons-general;
+  content: "\f0ce";
+}
+.ion-md-fa-magic:before {
+  @extend .fa-icons-general;
+  content: "\f0d0";
+}
+.ion-md-fa-truck:before {
+  @extend .fa-icons-general;
+  content: "\f0d1";
+}
+.ion-md-fa-pinterest:before {
+  @extend .fa-icons-general;
+  content: "\f0d2";
+}
+.ion-md-fa-pinterest-square:before {
+  @extend .fa-icons-general;
+  content: "\f0d3";
+}
+.ion-md-fa-google-plus-square:before {
+  @extend .fa-icons-general;
+  content: "\f0d4";
+}
+.ion-md-fa-google-plus:before {
+  @extend .fa-icons-general;
+  content: "\f0d5";
+}
+.ion-md-fa-money:before {
+  @extend .fa-icons-general;
+  content: "\f0d6";
+}
+.ion-md-fa-caret-down:before {
+  @extend .fa-icons-general;
+  content: "\f0d7";
+}
+.ion-md-fa-caret-up:before {
+  @extend .fa-icons-general;
+  content: "\f0d8";
+}
+.ion-md-fa-caret-left:before {
+  @extend .fa-icons-general;
+  content: "\f0d9";
+}
+.ion-md-fa-caret-right:before {
+  @extend .fa-icons-general;
+  content: "\f0da";
+}
+.ion-md-fa-columns:before {
+  @extend .fa-icons-general;
+  content: "\f0db";
+}
+.ion-md-fa-unsorted:before,
+.ion-md-fa-sort:before {
+  @extend .fa-icons-general;
+  content: "\f0dc";
+}
+.ion-md-fa-sort-down:before,
+.ion-md-fa-sort-desc:before {
+  @extend .fa-icons-general;
+  content: "\f0dd";
+}
+.ion-md-fa-sort-up:before,
+.ion-md-fa-sort-asc:before {
+  @extend .fa-icons-general;
+  content: "\f0de";
+}
+.ion-md-fa-envelope:before {
+  @extend .fa-icons-general;
+  content: "\f0e0";
+}
+.ion-md-fa-linkedin:before {
+  @extend .fa-icons-general;
+  content: "\f0e1";
+}
+.ion-md-fa-rotate-left:before,
+.ion-md-fa-undo:before {
+  @extend .fa-icons-general;
+  content: "\f0e2";
+}
+.ion-md-fa-legal:before,
+.ion-md-fa-gavel:before {
+  @extend .fa-icons-general;
+  content: "\f0e3";
+}
+.ion-md-fa-dashboard:before,
+.ion-md-fa-tachometer:before {
+  @extend .fa-icons-general;
+  content: "\f0e4";
+}
+.ion-md-fa-comment-o:before {
+  @extend .fa-icons-general;
+  content: "\f0e5";
+}
+.ion-md-fa-comments-o:before {
+  @extend .fa-icons-general;
+  content: "\f0e6";
+}
+.ion-md-fa-flash:before,
+.ion-md-fa-bolt:before {
+  @extend .fa-icons-general;
+  content: "\f0e7";
+}
+.ion-md-fa-sitemap:before {
+  @extend .fa-icons-general;
+  content: "\f0e8";
+}
+.ion-md-fa-umbrella:before {
+  @extend .fa-icons-general;
+  content: "\f0e9";
+}
+.ion-md-fa-paste:before,
+.ion-md-fa-clipboard:before {
+  @extend .fa-icons-general;
+  content: "\f0ea";
+}
+.ion-md-fa-lightbulb-o:before {
+  @extend .fa-icons-general;
+  content: "\f0eb";
+}
+.ion-md-fa-exchange:before {
+  @extend .fa-icons-general;
+  content: "\f0ec";
+}
+.ion-md-fa-cloud-download:before {
+  @extend .fa-icons-general;
+  content: "\f0ed";
+}
+.ion-md-fa-cloud-upload:before {
+  @extend .fa-icons-general;
+  content: "\f0ee";
+}
+.ion-md-fa-user-md:before {
+  @extend .fa-icons-general;
+  content: "\f0f0";
+}
+.ion-md-fa-stethoscope:before {
+  @extend .fa-icons-general;
+  content: "\f0f1";
+}
+.ion-md-fa-suitcase:before {
+  @extend .fa-icons-general;
+  content: "\f0f2";
+}
+.ion-md-fa-bell-o:before {
+  @extend .fa-icons-general;
+  content: "\f0a2";
+}
+.ion-md-fa-coffee:before {
+  @extend .fa-icons-general;
+  content: "\f0f4";
+}
+.ion-md-fa-cutlery:before {
+  @extend .fa-icons-general;
+  content: "\f0f5";
+}
+.ion-md-fa-file-text-o:before {
+  @extend .fa-icons-general;
+  content: "\f0f6";
+}
+.ion-md-fa-building-o:before {
+  @extend .fa-icons-general;
+  content: "\f0f7";
+}
+.ion-md-fa-hospital-o:before {
+  @extend .fa-icons-general;
+  content: "\f0f8";
+}
+.ion-md-fa-ambulance:before {
+  @extend .fa-icons-general;
+  content: "\f0f9";
+}
+.ion-md-fa-medkit:before {
+  @extend .fa-icons-general;
+  content: "\f0fa";
+}
+.ion-md-fa-fighter-jet:before {
+  @extend .fa-icons-general;
+  content: "\f0fb";
+}
+.ion-md-fa-beer:before {
+  @extend .fa-icons-general;
+  content: "\f0fc";
+}
+.ion-md-fa-h-square:before {
+  @extend .fa-icons-general;
+  content: "\f0fd";
+}
+.ion-md-fa-plus-square:before {
+  @extend .fa-icons-general;
+  content: "\f0fe";
+}
+.ion-md-fa-angle-double-left:before {
+  @extend .fa-icons-general;
+  content: "\f100";
+}
+.ion-md-fa-angle-double-right:before {
+  @extend .fa-icons-general;
+  content: "\f101";
+}
+.ion-md-fa-angle-double-up:before {
+  @extend .fa-icons-general;
+  content: "\f102";
+}
+.ion-md-fa-angle-double-down:before {
+  @extend .fa-icons-general;
+  content: "\f103";
+}
+.ion-md-fa-angle-left:before {
+  @extend .fa-icons-general;
+  content: "\f104";
+}
+.ion-md-fa-angle-right:before {
+  @extend .fa-icons-general;
+  content: "\f105";
+}
+.ion-md-fa-angle-up:before {
+  @extend .fa-icons-general;
+  content: "\f106";
+}
+.ion-md-fa-angle-down:before {
+  @extend .fa-icons-general;
+  content: "\f107";
+}
+.ion-md-fa-desktop:before {
+  @extend .fa-icons-general;
+  content: "\f108";
+}
+.ion-md-fa-laptop:before {
+  @extend .fa-icons-general;
+  content: "\f109";
+}
+.ion-md-fa-tablet:before {
+  @extend .fa-icons-general;
+  content: "\f10a";
+}
+.ion-md-fa-mobile-phone:before,
+.ion-md-fa-mobile:before {
+  @extend .fa-icons-general;
+  content: "\f10b";
+}
+.ion-md-fa-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f10c";
+}
+.ion-md-fa-quote-left:before {
+  @extend .fa-icons-general;
+  content: "\f10d";
+}
+.ion-md-fa-quote-right:before {
+  @extend .fa-icons-general;
+  content: "\f10e";
+}
+.ion-md-fa-spinner:before {
+  @extend .fa-icons-general;
+  content: "\f110";
+}
+.ion-md-fa-circle:before {
+  @extend .fa-icons-general;
+  content: "\f111";
+}
+.ion-md-fa-mail-reply:before,
+.ion-md-fa-reply:before {
+  @extend .fa-icons-general;
+  content: "\f112";
+}
+.ion-md-fa-github-alt:before {
+  @extend .fa-icons-general;
+  content: "\f113";
+}
+.ion-md-fa-folder-o:before {
+  @extend .fa-icons-general;
+  content: "\f114";
+}
+.ion-md-fa-folder-open-o:before {
+  @extend .fa-icons-general;
+  content: "\f115";
+}
+.ion-md-fa-smile-o:before {
+  @extend .fa-icons-general;
+  content: "\f118";
+}
+.ion-md-fa-frown-o:before {
+  @extend .fa-icons-general;
+  content: "\f119";
+}
+.ion-md-fa-meh-o:before {
+  @extend .fa-icons-general;
+  content: "\f11a";
+}
+.ion-md-fa-gamepad:before {
+  @extend .fa-icons-general;
+  content: "\f11b";
+}
+.ion-md-fa-keyboard-o:before {
+  @extend .fa-icons-general;
+  content: "\f11c";
+}
+.ion-md-fa-flag-o:before {
+  @extend .fa-icons-general;
+  content: "\f11d";
+}
+.ion-md-fa-flag-checkered:before {
+  @extend .fa-icons-general;
+  content: "\f11e";
+}
+.ion-md-fa-terminal:before {
+  @extend .fa-icons-general;
+  content: "\f120";
+}
+.ion-md-fa-code:before {
+  @extend .fa-icons-general;
+  content: "\f121";
+}
+.ion-md-fa-mail-reply-all:before,
+.ion-md-fa-reply-all:before {
+  @extend .fa-icons-general;
+  content: "\f122";
+}
+.ion-md-fa-star-half-empty:before,
+.ion-md-fa-star-half-full:before,
+.ion-md-fa-star-half-o:before {
+  @extend .fa-icons-general;
+  content: "\f123";
+}
+.ion-md-fa-location-arrow:before {
+  @extend .fa-icons-general;
+  content: "\f124";
+}
+.ion-md-fa-crop:before {
+  @extend .fa-icons-general;
+  content: "\f125";
+}
+.ion-md-fa-code-fork:before {
+  @extend .fa-icons-general;
+  content: "\f126";
+}
+.ion-md-fa-unlink:before,
+.ion-md-fa-chain-broken:before {
+  @extend .fa-icons-general;
+  content: "\f127";
+}
+.ion-md-fa-question:before {
+  @extend .fa-icons-general;
+  content: "\f128";
+}
+.ion-md-fa-info:before {
+  @extend .fa-icons-general;
+  content: "\f129";
+}
+.ion-md-fa-exclamation:before {
+  @extend .fa-icons-general;
+  content: "\f12a";
+}
+.ion-md-fa-superscript:before {
+  @extend .fa-icons-general;
+  content: "\f12b";
+}
+.ion-md-fa-subscript:before {
+  @extend .fa-icons-general;
+  content: "\f12c";
+}
+.ion-md-fa-eraser:before {
+  @extend .fa-icons-general;
+  content: "\f12d";
+}
+.ion-md-fa-puzzle-piece:before {
+  @extend .fa-icons-general;
+  content: "\f12e";
+}
+.ion-md-fa-microphone:before {
+  @extend .fa-icons-general;
+  content: "\f130";
+}
+.ion-md-fa-microphone-slash:before {
+  @extend .fa-icons-general;
+  content: "\f131";
+}
+.ion-md-fa-shield:before {
+  @extend .fa-icons-general;
+  content: "\f132";
+}
+.ion-md-fa-calendar-o:before {
+  @extend .fa-icons-general;
+  content: "\f133";
+}
+.ion-md-fa-fire-extinguisher:before {
+  @extend .fa-icons-general;
+  content: "\f134";
+}
+.ion-md-fa-rocket:before {
+  @extend .fa-icons-general;
+  content: "\f135";
+}
+.ion-md-fa-maxcdn:before {
+  @extend .fa-icons-general;
+  content: "\f136";
+}
+.ion-md-fa-chevron-circle-left:before {
+  @extend .fa-icons-general;
+  content: "\f137";
+}
+.ion-md-fa-chevron-circle-right:before {
+  @extend .fa-icons-general;
+  content: "\f138";
+}
+.ion-md-fa-chevron-circle-up:before {
+  @extend .fa-icons-general;
+  content: "\f139";
+}
+.ion-md-fa-chevron-circle-down:before {
+  @extend .fa-icons-general;
+  content: "\f13a";
+}
+.ion-md-fa-html5:before {
+  @extend .fa-icons-general;
+  content: "\f13b";
+}
+.ion-md-fa-css3:before {
+  @extend .fa-icons-general;
+  content: "\f13c";
+}
+.ion-md-fa-anchor:before {
+  @extend .fa-icons-general;
+  content: "\f13d";
+}
+.ion-md-fa-unlock-alt:before {
+  @extend .fa-icons-general;
+  content: "\f13e";
+}
+.ion-md-fa-bullseye:before {
+  @extend .fa-icons-general;
+  content: "\f140";
+}
+.ion-md-fa-ellipsis-h:before {
+  @extend .fa-icons-general;
+  content: "\f141";
+}
+.ion-md-fa-ellipsis-v:before {
+  @extend .fa-icons-general;
+  content: "\f142";
+}
+.ion-md-fa-rss-square:before {
+  @extend .fa-icons-general;
+  content: "\f143";
+}
+.ion-md-fa-play-circle:before {
+  @extend .fa-icons-general;
+  content: "\f144";
+}
+.ion-md-fa-ticket:before {
+  @extend .fa-icons-general;
+  content: "\f145";
+}
+.ion-md-fa-minus-square:before {
+  @extend .fa-icons-general;
+  content: "\f146";
+}
+.ion-md-fa-minus-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f147";
+}
+.ion-md-fa-level-up:before {
+  @extend .fa-icons-general;
+  content: "\f148";
+}
+.ion-md-fa-level-down:before {
+  @extend .fa-icons-general;
+  content: "\f149";
+}
+.ion-md-fa-check-square:before {
+  @extend .fa-icons-general;
+  content: "\f14a";
+}
+.ion-md-fa-pencil-square:before {
+  @extend .fa-icons-general;
+  content: "\f14b";
+}
+.ion-md-fa-external-link-square:before {
+  @extend .fa-icons-general;
+  content: "\f14c";
+}
+.ion-md-fa-share-square:before {
+  @extend .fa-icons-general;
+  content: "\f14d";
+}
+.ion-md-fa-compass:before {
+  @extend .fa-icons-general;
+  content: "\f14e";
+}
+.ion-md-fa-toggle-down:before,
+.ion-md-fa-caret-square-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f150";
+}
+.ion-md-fa-toggle-up:before,
+.ion-md-fa-caret-square-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f151";
+}
+.ion-md-fa-toggle-right:before,
+.ion-md-fa-caret-square-o-right:before {
+  @extend .fa-icons-general;
+  content: "\f152";
+}
+.ion-md-fa-euro:before,
+.ion-md-fa-eur:before {
+  @extend .fa-icons-general;
+  content: "\f153";
+}
+.ion-md-fa-gbp:before {
+  @extend .fa-icons-general;
+  content: "\f154";
+}
+.ion-md-fa-dollar:before,
+.ion-md-fa-usd:before {
+  @extend .fa-icons-general;
+  content: "\f155";
+}
+.ion-md-fa-rupee:before,
+.ion-md-fa-inr:before {
+  @extend .fa-icons-general;
+  content: "\f156";
+}
+.ion-md-fa-cny:before,
+.ion-md-fa-rmb:before,
+.ion-md-fa-yen:before,
+.ion-md-fa-jpy:before {
+  @extend .fa-icons-general;
+  content: "\f157";
+}
+.ion-md-fa-ruble:before,
+.ion-md-fa-rouble:before,
+.ion-md-fa-rub:before {
+  @extend .fa-icons-general;
+  content: "\f158";
+}
+.ion-md-fa-won:before,
+.ion-md-fa-krw:before {
+  @extend .fa-icons-general;
+  content: "\f159";
+}
+.ion-md-fa-bitcoin:before,
+.ion-md-fa-btc:before {
+  @extend .fa-icons-general;
+  content: "\f15a";
+}
+.ion-md-fa-file:before {
+  @extend .fa-icons-general;
+  content: "\f15b";
+}
+.ion-md-fa-file-text:before {
+  @extend .fa-icons-general;
+  content: "\f15c";
+}
+.ion-md-fa-sort-alpha-asc:before {
+  @extend .fa-icons-general;
+  content: "\f15d";
+}
+.ion-md-fa-sort-alpha-desc:before {
+  @extend .fa-icons-general;
+  content: "\f15e";
+}
+.ion-md-fa-sort-amount-asc:before {
+  @extend .fa-icons-general;
+  content: "\f160";
+}
+.ion-md-fa-sort-amount-desc:before {
+  @extend .fa-icons-general;
+  content: "\f161";
+}
+.ion-md-fa-sort-numeric-asc:before {
+  @extend .fa-icons-general;
+  content: "\f162";
+}
+.ion-md-fa-sort-numeric-desc:before {
+  @extend .fa-icons-general;
+  content: "\f163";
+}
+.ion-md-fa-thumbs-up:before {
+  @extend .fa-icons-general;
+  content: "\f164";
+}
+.ion-md-fa-thumbs-down:before {
+  @extend .fa-icons-general;
+  content: "\f165";
+}
+.ion-md-fa-youtube-square:before {
+  @extend .fa-icons-general;
+  content: "\f166";
+}
+.ion-md-fa-youtube:before {
+  @extend .fa-icons-general;
+  content: "\f167";
+}
+.ion-md-fa-xing:before {
+  @extend .fa-icons-general;
+  content: "\f168";
+}
+.ion-md-fa-xing-square:before {
+  @extend .fa-icons-general;
+  content: "\f169";
+}
+.ion-md-fa-youtube-play:before {
+  @extend .fa-icons-general;
+  content: "\f16a";
+}
+.ion-md-fa-dropbox:before {
+  @extend .fa-icons-general;
+  content: "\f16b";
+}
+.ion-md-fa-stack-overflow:before {
+  @extend .fa-icons-general;
+  content: "\f16c";
+}
+.ion-md-fa-instagram:before {
+  @extend .fa-icons-general;
+  content: "\f16d";
+}
+.ion-md-fa-flickr:before {
+  @extend .fa-icons-general;
+  content: "\f16e";
+}
+.ion-md-fa-adn:before {
+  @extend .fa-icons-general;
+  content: "\f170";
+}
+.ion-md-fa-bitbucket:before {
+  @extend .fa-icons-general;
+  content: "\f171";
+}
+.ion-md-fa-bitbucket-square:before {
+  @extend .fa-icons-general;
+  content: "\f172";
+}
+.ion-md-fa-tumblr:before {
+  @extend .fa-icons-general;
+  content: "\f173";
+}
+.ion-md-fa-tumblr-square:before {
+  @extend .fa-icons-general;
+  content: "\f174";
+}
+.ion-md-fa-long-arrow-down:before {
+  @extend .fa-icons-general;
+  content: "\f175";
+}
+.ion-md-fa-long-arrow-up:before {
+  @extend .fa-icons-general;
+  content: "\f176";
+}
+.ion-md-fa-long-arrow-left:before {
+  @extend .fa-icons-general;
+  content: "\f177";
+}
+.ion-md-fa-long-arrow-right:before {
+  @extend .fa-icons-general;
+  content: "\f178";
+}
+.ion-md-fa-apple:before {
+  @extend .fa-icons-general;
+  content: "\f179";
+}
+.ion-md-fa-windows:before {
+  @extend .fa-icons-general;
+  content: "\f17a";
+}
+.ion-md-fa-android:before {
+  @extend .fa-icons-general;
+  content: "\f17b";
+}
+.ion-md-fa-linux:before {
+  @extend .fa-icons-general;
+  content: "\f17c";
+}
+.ion-md-fa-dribbble:before {
+  @extend .fa-icons-general;
+  content: "\f17d";
+}
+.ion-md-fa-skype:before {
+  @extend .fa-icons-general;
+  content: "\f17e";
+}
+.ion-md-fa-foursquare:before {
+  @extend .fa-icons-general;
+  content: "\f180";
+}
+.ion-md-fa-trello:before {
+  @extend .fa-icons-general;
+  content: "\f181";
+}
+.ion-md-fa-female:before {
+  @extend .fa-icons-general;
+  content: "\f182";
+}
+.ion-md-fa-male:before {
+  @extend .fa-icons-general;
+  content: "\f183";
+}
+.ion-md-fa-gittip:before,
+.ion-md-fa-gratipay:before {
+  @extend .fa-icons-general;
+  content: "\f184";
+}
+.ion-md-fa-sun-o:before {
+  @extend .fa-icons-general;
+  content: "\f185";
+}
+.ion-md-fa-moon-o:before {
+  @extend .fa-icons-general;
+  content: "\f186";
+}
+.ion-md-fa-archive:before {
+  @extend .fa-icons-general;
+  content: "\f187";
+}
+.ion-md-fa-bug:before {
+  @extend .fa-icons-general;
+  content: "\f188";
+}
+.ion-md-fa-vk:before {
+  @extend .fa-icons-general;
+  content: "\f189";
+}
+.ion-md-fa-weibo:before {
+  @extend .fa-icons-general;
+  content: "\f18a";
+}
+.ion-md-fa-renren:before {
+  @extend .fa-icons-general;
+  content: "\f18b";
+}
+.ion-md-fa-pagelines:before {
+  @extend .fa-icons-general;
+  content: "\f18c";
+}
+.ion-md-fa-stack-exchange:before {
+  @extend .fa-icons-general;
+  content: "\f18d";
+}
+.ion-md-fa-arrow-circle-o-right:before {
+  @extend .fa-icons-general;
+  content: "\f18e";
+}
+.ion-md-fa-arrow-circle-o-left:before {
+  @extend .fa-icons-general;
+  content: "\f190";
+}
+.ion-md-fa-toggle-left:before,
+.ion-md-fa-caret-square-o-left:before {
+  @extend .fa-icons-general;
+  content: "\f191";
+}
+.ion-md-fa-dot-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f192";
+}
+.ion-md-fa-wheelchair:before {
+  @extend .fa-icons-general;
+  content: "\f193";
+}
+.ion-md-fa-vimeo-square:before {
+  @extend .fa-icons-general;
+  content: "\f194";
+}
+.ion-md-fa-turkish-lira:before,
+.ion-md-fa-try:before {
+  @extend .fa-icons-general;
+  content: "\f195";
+}
+.ion-md-fa-plus-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f196";
+}
+.ion-md-fa-space-shuttle:before {
+  @extend .fa-icons-general;
+  content: "\f197";
+}
+.ion-md-fa-slack:before {
+  @extend .fa-icons-general;
+  content: "\f198";
+}
+.ion-md-fa-envelope-square:before {
+  @extend .fa-icons-general;
+  content: "\f199";
+}
+.ion-md-fa-wordpress:before {
+  @extend .fa-icons-general;
+  content: "\f19a";
+}
+.ion-md-fa-openid:before {
+  @extend .fa-icons-general;
+  content: "\f19b";
+}
+.ion-md-fa-institution:before,
+.ion-md-fa-bank:before,
+.ion-md-fa-university:before {
+  @extend .fa-icons-general;
+  content: "\f19c";
+}
+.ion-md-fa-mortar-board:before,
+.ion-md-fa-graduation-cap:before {
+  @extend .fa-icons-general;
+  content: "\f19d";
+}
+.ion-md-fa-yahoo:before {
+  @extend .fa-icons-general;
+  content: "\f19e";
+}
+.ion-md-fa-google:before {
+  @extend .fa-icons-general;
+  content: "\f1a0";
+}
+.ion-md-fa-reddit:before {
+  @extend .fa-icons-general;
+  content: "\f1a1";
+}
+.ion-md-fa-reddit-square:before {
+  @extend .fa-icons-general;
+  content: "\f1a2";
+}
+.ion-md-fa-stumbleupon-circle:before {
+  @extend .fa-icons-general;
+  content: "\f1a3";
+}
+.ion-md-fa-stumbleupon:before {
+  @extend .fa-icons-general;
+  content: "\f1a4";
+}
+.ion-md-fa-delicious:before {
+  @extend .fa-icons-general;
+  content: "\f1a5";
+}
+.ion-md-fa-digg:before {
+  @extend .fa-icons-general;
+  content: "\f1a6";
+}
+.ion-md-fa-pied-piper:before {
+  @extend .fa-icons-general;
+  content: "\f1a7";
+}
+.ion-md-fa-pied-piper-alt:before {
+  @extend .fa-icons-general;
+  content: "\f1a8";
+}
+.ion-md-fa-drupal:before {
+  @extend .fa-icons-general;
+  content: "\f1a9";
+}
+.ion-md-fa-joomla:before {
+  @extend .fa-icons-general;
+  content: "\f1aa";
+}
+.ion-md-fa-language:before {
+  @extend .fa-icons-general;
+  content: "\f1ab";
+}
+.ion-md-fa-fax:before {
+  @extend .fa-icons-general;
+  content: "\f1ac";
+}
+.ion-md-fa-building:before {
+  @extend .fa-icons-general;
+  content: "\f1ad";
+}
+.ion-md-fa-child:before {
+  @extend .fa-icons-general;
+  content: "\f1ae";
+}
+.ion-md-fa-paw:before {
+  @extend .fa-icons-general;
+  content: "\f1b0";
+}
+.ion-md-fa-spoon:before {
+  @extend .fa-icons-general;
+  content: "\f1b1";
+}
+.ion-md-fa-cube:before {
+  @extend .fa-icons-general;
+  content: "\f1b2";
+}
+.ion-md-fa-cubes:before {
+  @extend .fa-icons-general;
+  content: "\f1b3";
+}
+.ion-md-fa-behance:before {
+  @extend .fa-icons-general;
+  content: "\f1b4";
+}
+.ion-md-fa-behance-square:before {
+  @extend .fa-icons-general;
+  content: "\f1b5";
+}
+.ion-md-fa-steam:before {
+  @extend .fa-icons-general;
+  content: "\f1b6";
+}
+.ion-md-fa-steam-square:before {
+  @extend .fa-icons-general;
+  content: "\f1b7";
+}
+.ion-md-fa-recycle:before {
+  @extend .fa-icons-general;
+  content: "\f1b8";
+}
+.ion-md-fa-automobile:before,
+.ion-md-fa-car:before {
+  @extend .fa-icons-general;
+  content: "\f1b9";
+}
+.ion-md-fa-cab:before,
+.ion-md-fa-taxi:before {
+  @extend .fa-icons-general;
+  content: "\f1ba";
+}
+.ion-md-fa-tree:before {
+  @extend .fa-icons-general;
+  content: "\f1bb";
+}
+.ion-md-fa-spotify:before {
+  @extend .fa-icons-general;
+  content: "\f1bc";
+}
+.ion-md-fa-deviantart:before {
+  @extend .fa-icons-general;
+  content: "\f1bd";
+}
+.ion-md-fa-soundcloud:before {
+  @extend .fa-icons-general;
+  content: "\f1be";
+}
+.ion-md-fa-database:before {
+  @extend .fa-icons-general;
+  content: "\f1c0";
+}
+.ion-md-fa-file-pdf-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c1";
+}
+.ion-md-fa-file-word-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c2";
+}
+.ion-md-fa-file-excel-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c3";
+}
+.ion-md-fa-file-powerpoint-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c4";
+}
+.ion-md-fa-file-photo-o:before,
+.ion-md-fa-file-picture-o:before,
+.ion-md-fa-file-image-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c5";
+}
+.ion-md-fa-file-zip-o:before,
+.ion-md-fa-file-archive-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c6";
+}
+.ion-md-fa-file-sound-o:before,
+.ion-md-fa-file-audio-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c7";
+}
+.ion-md-fa-file-movie-o:before,
+.ion-md-fa-file-video-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c8";
+}
+.ion-md-fa-file-code-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c9";
+}
+.ion-md-fa-vine:before {
+  @extend .fa-icons-general;
+  content: "\f1ca";
+}
+.ion-md-fa-codepen:before {
+  @extend .fa-icons-general;
+  content: "\f1cb";
+}
+.ion-md-fa-jsfiddle:before {
+  @extend .fa-icons-general;
+  content: "\f1cc";
+}
+.ion-md-fa-life-bouy:before,
+.ion-md-fa-life-buoy:before,
+.ion-md-fa-life-saver:before,
+.ion-md-fa-support:before,
+.ion-md-fa-life-ring:before {
+  @extend .fa-icons-general;
+  content: "\f1cd";
+}
+.ion-md-fa-circle-o-notch:before {
+  @extend .fa-icons-general;
+  content: "\f1ce";
+}
+.ion-md-fa-ra:before,
+.ion-md-fa-rebel:before {
+  @extend .fa-icons-general;
+  content: "\f1d0";
+}
+.ion-md-fa-ge:before,
+.ion-md-fa-empire:before {
+  @extend .fa-icons-general;
+  content: "\f1d1";
+}
+.ion-md-fa-git-square:before {
+  @extend .fa-icons-general;
+  content: "\f1d2";
+}
+.ion-md-fa-git:before {
+  @extend .fa-icons-general;
+  content: "\f1d3";
+}
+.ion-md-fa-y-combinator-square:before,
+.ion-md-fa-yc-square:before,
+.ion-md-fa-hacker-news:before {
+  @extend .fa-icons-general;
+  content: "\f1d4";
+}
+.ion-md-fa-tencent-weibo:before {
+  @extend .fa-icons-general;
+  content: "\f1d5";
+}
+.ion-md-fa-qq:before {
+  @extend .fa-icons-general;
+  content: "\f1d6";
+}
+.ion-md-fa-wechat:before,
+.ion-md-fa-weixin:before {
+  @extend .fa-icons-general;
+  content: "\f1d7";
+}
+.ion-md-fa-send:before,
+.ion-md-fa-paper-plane:before {
+  @extend .fa-icons-general;
+  content: "\f1d8";
+}
+.ion-md-fa-send-o:before,
+.ion-md-fa-paper-plane-o:before {
+  @extend .fa-icons-general;
+  content: "\f1d9";
+}
+.ion-md-fa-history:before {
+  @extend .fa-icons-general;
+  content: "\f1da";
+}
+.ion-md-fa-circle-thin:before {
+  @extend .fa-icons-general;
+  content: "\f1db";
+}
+.ion-md-fa-header:before {
+  @extend .fa-icons-general;
+  content: "\f1dc";
+}
+.ion-md-fa-paragraph:before {
+  @extend .fa-icons-general;
+  content: "\f1dd";
+}
+.ion-md-fa-sliders:before {
+  @extend .fa-icons-general;
+  content: "\f1de";
+}
+.ion-md-fa-share-alt:before {
+  @extend .fa-icons-general;
+  content: "\f1e0";
+}
+.ion-md-fa-share-alt-square:before {
+  @extend .fa-icons-general;
+  content: "\f1e1";
+}
+.ion-md-fa-bomb:before {
+  @extend .fa-icons-general;
+  content: "\f1e2";
+}
+.ion-md-fa-soccer-ball-o:before,
+.ion-md-fa-futbol-o:before {
+  @extend .fa-icons-general;
+  content: "\f1e3";
+}
+.ion-md-fa-tty:before {
+  @extend .fa-icons-general;
+  content: "\f1e4";
+}
+.ion-md-fa-binoculars:before {
+  @extend .fa-icons-general;
+  content: "\f1e5";
+}
+.ion-md-fa-plug:before {
+  @extend .fa-icons-general;
+  content: "\f1e6";
+}
+.ion-md-fa-slideshare:before {
+  @extend .fa-icons-general;
+  content: "\f1e7";
+}
+.ion-md-fa-twitch:before {
+  @extend .fa-icons-general;
+  content: "\f1e8";
+}
+.ion-md-fa-yelp:before {
+  @extend .fa-icons-general;
+  content: "\f1e9";
+}
+.ion-md-fa-newspaper-o:before {
+  @extend .fa-icons-general;
+  content: "\f1ea";
+}
+.ion-md-fa-wifi:before {
+  @extend .fa-icons-general;
+  content: "\f1eb";
+}
+.ion-md-fa-calculator:before {
+  @extend .fa-icons-general;
+  content: "\f1ec";
+}
+.ion-md-fa-paypal:before {
+  @extend .fa-icons-general;
+  content: "\f1ed";
+}
+.ion-md-fa-google-wallet:before {
+  @extend .fa-icons-general;
+  content: "\f1ee";
+}
+.ion-md-fa-cc-visa:before {
+  @extend .fa-icons-general;
+  content: "\f1f0";
+}
+.ion-md-fa-cc-mastercard:before {
+  @extend .fa-icons-general;
+  content: "\f1f1";
+}
+.ion-md-fa-cc-discover:before {
+  @extend .fa-icons-general;
+  content: "\f1f2";
+}
+.ion-md-fa-cc-amex:before {
+  @extend .fa-icons-general;
+  content: "\f1f3";
+}
+.ion-md-fa-cc-paypal:before {
+  @extend .fa-icons-general;
+  content: "\f1f4";
+}
+.ion-md-fa-cc-stripe:before {
+  @extend .fa-icons-general;
+  content: "\f1f5";
+}
+.ion-md-fa-bell-slash:before {
+  @extend .fa-icons-general;
+  content: "\f1f6";
+}
+.ion-md-fa-bell-slash-o:before {
+  @extend .fa-icons-general;
+  content: "\f1f7";
+}
+.ion-md-fa-trash:before {
+  @extend .fa-icons-general;
+  content: "\f1f8";
+}
+.ion-md-fa-copyright:before {
+  @extend .fa-icons-general;
+  content: "\f1f9";
+}
+.ion-md-fa-at:before {
+  @extend .fa-icons-general;
+  content: "\f1fa";
+}
+.ion-md-fa-eyedropper:before {
+  @extend .fa-icons-general;
+  content: "\f1fb";
+}
+.ion-md-fa-paint-brush:before {
+  @extend .fa-icons-general;
+  content: "\f1fc";
+}
+.ion-md-fa-birthday-cake:before {
+  @extend .fa-icons-general;
+  content: "\f1fd";
+}
+.ion-md-fa-area-chart:before {
+  @extend .fa-icons-general;
+  content: "\f1fe";
+}
+.ion-md-fa-pie-chart:before {
+  @extend .fa-icons-general;
+  content: "\f200";
+}
+.ion-md-fa-line-chart:before {
+  @extend .fa-icons-general;
+  content: "\f201";
+}
+.ion-md-fa-lastfm:before {
+  @extend .fa-icons-general;
+  content: "\f202";
+}
+.ion-md-fa-lastfm-square:before {
+  @extend .fa-icons-general;
+  content: "\f203";
+}
+.ion-md-fa-toggle-off:before {
+  @extend .fa-icons-general;
+  content: "\f204";
+}
+.ion-md-fa-toggle-on:before {
+  @extend .fa-icons-general;
+  content: "\f205";
+}
+.ion-md-fa-bicycle:before {
+  @extend .fa-icons-general;
+  content: "\f206";
+}
+.ion-md-fa-bus:before {
+  @extend .fa-icons-general;
+  content: "\f207";
+}
+.ion-md-fa-ioxhost:before {
+  @extend .fa-icons-general;
+  content: "\f208";
+}
+.ion-md-fa-angellist:before {
+  @extend .fa-icons-general;
+  content: "\f209";
+}
+.ion-md-fa-cc:before {
+  @extend .fa-icons-general;
+  content: "\f20a";
+}
+.ion-md-fa-shekel:before,
+.ion-md-fa-sheqel:before,
+.ion-md-fa-ils:before {
+  @extend .fa-icons-general;
+  content: "\f20b";
+}
+.ion-md-fa-meanpath:before {
+  @extend .fa-icons-general;
+  content: "\f20c";
+}
+.ion-md-fa-buysellads:before {
+  @extend .fa-icons-general;
+  content: "\f20d";
+}
+.ion-md-fa-connectdevelop:before {
+  @extend .fa-icons-general;
+  content: "\f20e";
+}
+.ion-md-fa-dashcube:before {
+  @extend .fa-icons-general;
+  content: "\f210";
+}
+.ion-md-fa-forumbee:before {
+  @extend .fa-icons-general;
+  content: "\f211";
+}
+.ion-md-fa-leanpub:before {
+  @extend .fa-icons-general;
+  content: "\f212";
+}
+.ion-md-fa-sellsy:before {
+  @extend .fa-icons-general;
+  content: "\f213";
+}
+.ion-md-fa-shirtsinbulk:before {
+  @extend .fa-icons-general;
+  content: "\f214";
+}
+.ion-md-fa-simplybuilt:before {
+  @extend .fa-icons-general;
+  content: "\f215";
+}
+.ion-md-fa-skyatlas:before {
+  @extend .fa-icons-general;
+  content: "\f216";
+}
+.ion-md-fa-cart-plus:before {
+  @extend .fa-icons-general;
+  content: "\f217";
+}
+.ion-md-fa-cart-arrow-down:before {
+  @extend .fa-icons-general;
+  content: "\f218";
+}
+.ion-md-fa-diamond:before {
+  @extend .fa-icons-general;
+  content: "\f219";
+}
+.ion-md-fa-ship:before {
+  @extend .fa-icons-general;
+  content: "\f21a";
+}
+.ion-md-fa-user-secret:before {
+  @extend .fa-icons-general;
+  content: "\f21b";
+}
+.ion-md-fa-motorcycle:before {
+  @extend .fa-icons-general;
+  content: "\f21c";
+}
+.ion-md-fa-street-view:before {
+  @extend .fa-icons-general;
+  content: "\f21d";
+}
+.ion-md-fa-heartbeat:before {
+  @extend .fa-icons-general;
+  content: "\f21e";
+}
+.ion-md-fa-venus:before {
+  @extend .fa-icons-general;
+  content: "\f221";
+}
+.ion-md-fa-mars:before {
+  @extend .fa-icons-general;
+  content: "\f222";
+}
+.ion-md-fa-mercury:before {
+  @extend .fa-icons-general;
+  content: "\f223";
+}
+.ion-md-fa-intersex:before,
+.ion-md-fa-transgender:before {
+  @extend .fa-icons-general;
+  content: "\f224";
+}
+.ion-md-fa-transgender-alt:before {
+  @extend .fa-icons-general;
+  content: "\f225";
+}
+.ion-md-fa-venus-double:before {
+  @extend .fa-icons-general;
+  content: "\f226";
+}
+.ion-md-fa-mars-double:before {
+  @extend .fa-icons-general;
+  content: "\f227";
+}
+.ion-md-fa-venus-mars:before {
+  @extend .fa-icons-general;
+  content: "\f228";
+}
+.ion-md-fa-mars-stroke:before {
+  @extend .fa-icons-general;
+  content: "\f229";
+}
+.ion-md-fa-mars-stroke-v:before {
+  @extend .fa-icons-general;
+  content: "\f22a";
+}
+.ion-md-fa-mars-stroke-h:before {
+  @extend .fa-icons-general;
+  content: "\f22b";
+}
+.ion-md-fa-neuter:before {
+  @extend .fa-icons-general;
+  content: "\f22c";
+}
+.ion-md-fa-genderless:before {
+  @extend .fa-icons-general;
+  content: "\f22d";
+}
+.ion-md-fa-facebook-official:before {
+  @extend .fa-icons-general;
+  content: "\f230";
+}
+.ion-md-fa-pinterest-p:before {
+  @extend .fa-icons-general;
+  content: "\f231";
+}
+.ion-md-fa-whatsapp:before {
+  @extend .fa-icons-general;
+  content: "\f232";
+}
+.ion-md-fa-server:before {
+  @extend .fa-icons-general;
+  content: "\f233";
+}
+.ion-md-fa-user-plus:before {
+  @extend .fa-icons-general;
+  content: "\f234";
+}
+.ion-md-fa-user-times:before {
+  @extend .fa-icons-general;
+  content: "\f235";
+}
+.ion-md-fa-hotel:before,
+.ion-md-fa-bed:before {
+  @extend .fa-icons-general;
+  content: "\f236";
+}
+.ion-md-fa-viacoin:before {
+  @extend .fa-icons-general;
+  content: "\f237";
+}
+.ion-md-fa-train:before {
+  @extend .fa-icons-general;
+  content: "\f238";
+}
+.ion-md-fa-subway:before {
+  @extend .fa-icons-general;
+  content: "\f239";
+}
+.ion-md-fa-medium:before {
+  @extend .fa-icons-general;
+  content: "\f23a";
+}
+.ion-md-fa-yc:before,
+.ion-md-fa-y-combinator:before {
+  @extend .fa-icons-general;
+  content: "\f23b";
+}
+.ion-md-fa-optin-monster:before {
+  @extend .fa-icons-general;
+  content: "\f23c";
+}
+.ion-md-fa-opencart:before {
+  @extend .fa-icons-general;
+  content: "\f23d";
+}
+.ion-md-fa-expeditedssl:before {
+  @extend .fa-icons-general;
+  content: "\f23e";
+}
+.ion-md-fa-battery-4:before,
+.ion-md-fa-battery-full:before {
+  @extend .fa-icons-general;
+  content: "\f240";
+}
+.ion-md-fa-battery-3:before,
+.ion-md-fa-battery-three-quarters:before {
+  @extend .fa-icons-general;
+  content: "\f241";
+}
+.ion-md-fa-battery-2:before,
+.ion-md-fa-battery-half:before {
+  @extend .fa-icons-general;
+  content: "\f242";
+}
+.ion-md-fa-battery-1:before,
+.ion-md-fa-battery-quarter:before {
+  @extend .fa-icons-general;
+  content: "\f243";
+}
+.ion-md-fa-battery-0:before,
+.ion-md-fa-battery-empty:before {
+  @extend .fa-icons-general;
+  content: "\f244";
+}
+.ion-md-fa-mouse-pointer:before {
+  @extend .fa-icons-general;
+  content: "\f245";
+}
+.ion-md-fa-i-cursor:before {
+  @extend .fa-icons-general;
+  content: "\f246";
+}
+.ion-md-fa-object-group:before {
+  @extend .fa-icons-general;
+  content: "\f247";
+}
+.ion-md-fa-object-ungroup:before {
+  @extend .fa-icons-general;
+  content: "\f248";
+}
+.ion-md-fa-sticky-note:before {
+  @extend .fa-icons-general;
+  content: "\f249";
+}
+.ion-md-fa-sticky-note-o:before {
+  @extend .fa-icons-general;
+  content: "\f24a";
+}
+.ion-md-fa-cc-jcb:before {
+  @extend .fa-icons-general;
+  content: "\f24b";
+}
+.ion-md-fa-cc-diners-club:before {
+  @extend .fa-icons-general;
+  content: "\f24c";
+}
+.ion-md-fa-clone:before {
+  @extend .fa-icons-general;
+  content: "\f24d";
+}
+.ion-md-fa-balance-scale:before {
+  @extend .fa-icons-general;
+  content: "\f24e";
+}
+.ion-md-fa-hourglass-o:before {
+  @extend .fa-icons-general;
+  content: "\f250";
+}
+.ion-md-fa-hourglass-1:before,
+.ion-md-fa-hourglass-start:before {
+  @extend .fa-icons-general;
+  content: "\f251";
+}
+.ion-md-fa-hourglass-2:before,
+.ion-md-fa-hourglass-half:before {
+  @extend .fa-icons-general;
+  content: "\f252";
+}
+.ion-md-fa-hourglass-3:before,
+.ion-md-fa-hourglass-end:before {
+  @extend .fa-icons-general;
+  content: "\f253";
+}
+.ion-md-fa-hourglass:before {
+  @extend .fa-icons-general;
+  content: "\f254";
+}
+.ion-md-fa-hand-grab-o:before,
+.ion-md-fa-hand-rock-o:before {
+  @extend .fa-icons-general;
+  content: "\f255";
+}
+.ion-md-fa-hand-stop-o:before,
+.ion-md-fa-hand-paper-o:before {
+  @extend .fa-icons-general;
+  content: "\f256";
+}
+.ion-md-fa-hand-scissors-o:before {
+  @extend .fa-icons-general;
+  content: "\f257";
+}
+.ion-md-fa-hand-lizard-o:before {
+  @extend .fa-icons-general;
+  content: "\f258";
+}
+.ion-md-fa-hand-spock-o:before {
+  @extend .fa-icons-general;
+  content: "\f259";
+}
+.ion-md-fa-hand-pointer-o:before {
+  @extend .fa-icons-general;
+  content: "\f25a";
+}
+.ion-md-fa-hand-peace-o:before {
+  @extend .fa-icons-general;
+  content: "\f25b";
+}
+.ion-md-fa-trademark:before {
+  @extend .fa-icons-general;
+  content: "\f25c";
+}
+.ion-md-fa-registered:before {
+  @extend .fa-icons-general;
+  content: "\f25d";
+}
+.ion-md-fa-creative-commons:before {
+  @extend .fa-icons-general;
+  content: "\f25e";
+}
+.ion-md-fa-gg:before {
+  @extend .fa-icons-general;
+  content: "\f260";
+}
+.ion-md-fa-gg-circle:before {
+  @extend .fa-icons-general;
+  content: "\f261";
+}
+.ion-md-fa-tripadvisor:before {
+  @extend .fa-icons-general;
+  content: "\f262";
+}
+.ion-md-fa-odnoklassniki:before {
+  @extend .fa-icons-general;
+  content: "\f263";
+}
+.ion-md-fa-odnoklassniki-square:before {
+  @extend .fa-icons-general;
+  content: "\f264";
+}
+.ion-md-fa-get-pocket:before {
+  @extend .fa-icons-general;
+  content: "\f265";
+}
+.ion-md-fa-wikipedia-w:before {
+  @extend .fa-icons-general;
+  content: "\f266";
+}
+.ion-md-fa-safari:before {
+  @extend .fa-icons-general;
+  content: "\f267";
+}
+.ion-md-fa-chrome:before {
+  @extend .fa-icons-general;
+  content: "\f268";
+}
+.ion-md-fa-firefox:before {
+  @extend .fa-icons-general;
+  content: "\f269";
+}
+.ion-md-fa-opera:before {
+  @extend .fa-icons-general;
+  content: "\f26a";
+}
+.ion-md-fa-internet-explorer:before {
+  @extend .fa-icons-general;
+  content: "\f26b";
+}
+.ion-md-fa-tv:before,
+.ion-md-fa-television:before {
+  @extend .fa-icons-general;
+  content: "\f26c";
+}
+.ion-md-fa-contao:before {
+  @extend .fa-icons-general;
+  content: "\f26d";
+}
+.ion-md-fa-500px:before {
+  @extend .fa-icons-general;
+  content: "\f26e";
+}
+.ion-md-fa-amazon:before {
+  @extend .fa-icons-general;
+  content: "\f270";
+}
+.ion-md-fa-calendar-plus-o:before {
+  @extend .fa-icons-general;
+  content: "\f271";
+}
+.ion-md-fa-calendar-minus-o:before {
+  @extend .fa-icons-general;
+  content: "\f272";
+}
+.ion-md-fa-calendar-times-o:before {
+  @extend .fa-icons-general;
+  content: "\f273";
+}
+.ion-md-fa-calendar-check-o:before {
+  @extend .fa-icons-general;
+  content: "\f274";
+}
+.ion-md-fa-industry:before {
+  @extend .fa-icons-general;
+  content: "\f275";
+}
+.ion-md-fa-map-pin:before {
+  @extend .fa-icons-general;
+  content: "\f276";
+}
+.ion-md-fa-map-signs:before {
+  @extend .fa-icons-general;
+  content: "\f277";
+}
+.ion-md-fa-map-o:before {
+  @extend .fa-icons-general;
+  content: "\f278";
+}
+.ion-md-fa-map:before {
+  @extend .fa-icons-general;
+  content: "\f279";
+}
+.ion-md-fa-commenting:before {
+  @extend .fa-icons-general;
+  content: "\f27a";
+}
+.ion-md-fa-commenting-o:before {
+  @extend .fa-icons-general;
+  content: "\f27b";
+}
+.ion-md-fa-houzz:before {
+  @extend .fa-icons-general;
+  content: "\f27c";
+}
+.ion-md-fa-vimeo:before {
+  @extend .fa-icons-general;
+  content: "\f27d";
+}
+.ion-md-fa-black-tie:before {
+  @extend .fa-icons-general;
+  content: "\f27e";
+}
+.ion-md-fa-fonticons:before {
+  @extend .fa-icons-general;
+  content: "\f280";
+}
+.ion-md-fa-reddit-alien:before {
+  @extend .fa-icons-general;
+  content: "\f281";
+}
+.ion-md-fa-edge:before {
+  @extend .fa-icons-general;
+  content: "\f282";
+}
+.ion-md-fa-credit-card-alt:before {
+  @extend .fa-icons-general;
+  content: "\f283";
+}
+.ion-md-fa-codiepie:before {
+  @extend .fa-icons-general;
+  content: "\f284";
+}
+.ion-md-fa-modx:before {
+  @extend .fa-icons-general;
+  content: "\f285";
+}
+.ion-md-fa-fort-awesome:before {
+  @extend .fa-icons-general;
+  content: "\f286";
+}
+.ion-md-fa-usb:before {
+  @extend .fa-icons-general;
+  content: "\f287";
+}
+.ion-md-fa-product-hunt:before {
+  @extend .fa-icons-general;
+  content: "\f288";
+}
+.ion-md-fa-mixcloud:before {
+  @extend .fa-icons-general;
+  content: "\f289";
+}
+.ion-md-fa-scribd:before {
+  @extend .fa-icons-general;
+  content: "\f28a";
+}
+.ion-md-fa-pause-circle:before {
+  @extend .fa-icons-general;
+  content: "\f28b";
+}
+.ion-md-fa-pause-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f28c";
+}
+.ion-md-fa-stop-circle:before {
+  @extend .fa-icons-general;
+  content: "\f28d";
+}
+.ion-md-fa-stop-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f28e";
+}
+.ion-md-fa-shopping-bag:before {
+  @extend .fa-icons-general;
+  content: "\f290";
+}
+.ion-md-fa-shopping-basket:before {
+  @extend .fa-icons-general;
+  content: "\f291";
+}
+.ion-md-fa-hashtag:before {
+  @extend .fa-icons-general;
+  content: "\f292";
+}
+.ion-md-fa-bluetooth:before {
+  @extend .fa-icons-general;
+  content: "\f293";
+}
+.ion-md-fa-bluetooth-b:before {
+  @extend .fa-icons-general;
+  content: "\f294";
+}
+.ion-md-fa-percent:before {
+  @extend .fa-icons-general;
+  content: "\f295";
+}
+.ion-ios-fa-glass:before {
+  @extend .fa-icons-general;
+  content: "\f000";
+}
+.ion-ios-fa-music:before {
+  @extend .fa-icons-general;
+  content: "\f001";
+}
+.ion-ios-fa-search:before {
+  @extend .fa-icons-general;
+  content: "\f002";
+}
+.ion-ios-fa-envelope-o:before {
+  @extend .fa-icons-general;
+  content: "\f003";
+}
+.ion-ios-fa-heart:before {
+  @extend .fa-icons-general;
+  content: "\f004";
+}
+.ion-ios-fa-star:before {
+  @extend .fa-icons-general;
+  content: "\f005";
+}
+.ion-ios-fa-star-o:before {
+  @extend .fa-icons-general;
+  content: "\f006";
+}
+.ion-ios-fa-user:before {
+  @extend .fa-icons-general;
+  content: "\f007";
+}
+.ion-ios-fa-film:before {
+  @extend .fa-icons-general;
+  content: "\f008";
+}
+.ion-ios-fa-th-large:before {
+  @extend .fa-icons-general;
+  content: "\f009";
+}
+.ion-ios-fa-th:before {
+  @extend .fa-icons-general;
+  content: "\f00a";
+}
+.ion-ios-fa-th-list:before {
+  @extend .fa-icons-general;
+  content: "\f00b";
+}
+.ion-ios-fa-check:before {
+  @extend .fa-icons-general;
+  content: "\f00c";
+}
+.ion-ios-fa-remove:before,
+.ion-ios-fa-close:before,
+.ion-ios-fa-times:before {
+  @extend .fa-icons-general;
+  content: "\f00d";
+}
+.ion-ios-fa-search-plus:before {
+  @extend .fa-icons-general;
+  content: "\f00e";
+}
+.ion-ios-fa-search-minus:before {
+  @extend .fa-icons-general;
+  content: "\f010";
+}
+.ion-ios-fa-power-off:before {
+  @extend .fa-icons-general;
+  content: "\f011";
+}
+.ion-ios-fa-signal:before {
+  @extend .fa-icons-general;
+  content: "\f012";
+}
+.ion-ios-fa-gear:before,
+.ion-ios-fa-cog:before {
+  @extend .fa-icons-general;
+  content: "\f013";
+}
+.ion-ios-fa-trash-o:before {
+  @extend .fa-icons-general;
+  content: "\f014";
+}
+.ion-ios-fa-home:before {
+  @extend .fa-icons-general;
+  content: "\f015";
+}
+.ion-ios-fa-file-o:before {
+  @extend .fa-icons-general;
+  content: "\f016";
+}
+.ion-ios-fa-clock-o:before {
+  @extend .fa-icons-general;
+  content: "\f017";
+}
+.ion-ios-fa-road:before {
+  @extend .fa-icons-general;
+  content: "\f018";
+}
+.ion-ios-fa-download:before {
+  @extend .fa-icons-general;
+  content: "\f019";
+}
+.ion-ios-fa-arrow-circle-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f01a";
+}
+.ion-ios-fa-arrow-circle-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f01b";
+}
+.ion-ios-fa-inbox:before {
+  @extend .fa-icons-general;
+  content: "\f01c";
+}
+.ion-ios-fa-play-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f01d";
+}
+.ion-ios-fa-rotate-right:before,
+.ion-ios-fa-repeat:before {
+  @extend .fa-icons-general;
+  content: "\f01e";
+}
+.ion-ios-fa-refresh:before {
+  @extend .fa-icons-general;
+  content: "\f021";
+}
+.ion-ios-fa-list-alt:before {
+  @extend .fa-icons-general;
+  content: "\f022";
+}
+.ion-ios-fa-lock:before {
+  @extend .fa-icons-general;
+  content: "\f023";
+}
+.ion-ios-fa-flag:before {
+  @extend .fa-icons-general;
+  content: "\f024";
+}
+.ion-ios-fa-headphones:before {
+  @extend .fa-icons-general;
+  content: "\f025";
+}
+.ion-ios-fa-volume-off:before {
+  @extend .fa-icons-general;
+  content: "\f026";
+}
+.ion-ios-fa-volume-down:before {
+  @extend .fa-icons-general;
+  content: "\f027";
+}
+.ion-ios-fa-volume-up:before {
+  @extend .fa-icons-general;
+  content: "\f028";
+}
+.ion-ios-fa-qrcode:before {
+  @extend .fa-icons-general;
+  content: "\f029";
+}
+.ion-ios-fa-barcode:before {
+  @extend .fa-icons-general;
+  content: "\f02a";
+}
+.ion-ios-fa-tag:before {
+  @extend .fa-icons-general;
+  content: "\f02b";
+}
+.ion-ios-fa-tags:before {
+  @extend .fa-icons-general;
+  content: "\f02c";
+}
+.ion-ios-fa-book:before {
+  @extend .fa-icons-general;
+  content: "\f02d";
+}
+.ion-ios-fa-bookmark:before {
+  @extend .fa-icons-general;
+  content: "\f02e";
+}
+.ion-ios-fa-print:before {
+  @extend .fa-icons-general;
+  content: "\f02f";
+}
+.ion-ios-fa-camera:before {
+  @extend .fa-icons-general;
+  content: "\f030";
+}
+.ion-ios-fa-font:before {
+  @extend .fa-icons-general;
+  content: "\f031";
+}
+.ion-ios-fa-bold:before {
+  @extend .fa-icons-general;
+  content: "\f032";
+}
+.ion-ios-fa-italic:before {
+  @extend .fa-icons-general;
+  content: "\f033";
+}
+.ion-ios-fa-text-height:before {
+  @extend .fa-icons-general;
+  content: "\f034";
+}
+.ion-ios-fa-text-width:before {
+  @extend .fa-icons-general;
+  content: "\f035";
+}
+.ion-ios-fa-align-left:before {
+  @extend .fa-icons-general;
+  content: "\f036";
+}
+.ion-ios-fa-align-center:before {
+  @extend .fa-icons-general;
+  content: "\f037";
+}
+.ion-ios-fa-align-right:before {
+  @extend .fa-icons-general;
+  content: "\f038";
+}
+.ion-ios-fa-align-justify:before {
+  @extend .fa-icons-general;
+  content: "\f039";
+}
+.ion-ios-fa-list:before {
+  @extend .fa-icons-general;
+  content: "\f03a";
+}
+.ion-ios-fa-dedent:before,
+.ion-ios-fa-outdent:before {
+  @extend .fa-icons-general;
+  content: "\f03b";
+}
+.ion-ios-fa-indent:before {
+  @extend .fa-icons-general;
+  content: "\f03c";
+}
+.ion-ios-fa-video-camera:before {
+  @extend .fa-icons-general;
+  content: "\f03d";
+}
+.ion-ios-fa-photo:before,
+.ion-ios-fa-image:before,
+.ion-ios-fa-picture-o:before {
+  @extend .fa-icons-general;
+  content: "\f03e";
+}
+.ion-ios-fa-pencil:before {
+  @extend .fa-icons-general;
+  content: "\f040";
+}
+.ion-ios-fa-map-marker:before {
+  @extend .fa-icons-general;
+  content: "\f041";
+}
+.ion-ios-fa-adjust:before {
+  @extend .fa-icons-general;
+  content: "\f042";
+}
+.ion-ios-fa-tint:before {
+  @extend .fa-icons-general;
+  content: "\f043";
+}
+.ion-ios-fa-edit:before,
+.ion-ios-fa-pencil-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f044";
+}
+.ion-ios-fa-share-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f045";
+}
+.ion-ios-fa-check-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f046";
+}
+.ion-ios-fa-arrows:before {
+  @extend .fa-icons-general;
+  content: "\f047";
+}
+.ion-ios-fa-step-backward:before {
+  @extend .fa-icons-general;
+  content: "\f048";
+}
+.ion-ios-fa-fast-backward:before {
+  @extend .fa-icons-general;
+  content: "\f049";
+}
+.ion-ios-fa-backward:before {
+  @extend .fa-icons-general;
+  content: "\f04a";
+}
+.ion-ios-fa-play:before {
+  @extend .fa-icons-general;
+  content: "\f04b";
+}
+.ion-ios-fa-pause:before {
+  @extend .fa-icons-general;
+  content: "\f04c";
+}
+.ion-ios-fa-stop:before {
+  @extend .fa-icons-general;
+  content: "\f04d";
+}
+.ion-ios-fa-forward:before {
+  @extend .fa-icons-general;
+  content: "\f04e";
+}
+.ion-ios-fa-fast-forward:before {
+  @extend .fa-icons-general;
+  content: "\f050";
+}
+.ion-ios-fa-step-forward:before {
+  @extend .fa-icons-general;
+  content: "\f051";
+}
+.ion-ios-fa-eject:before {
+  @extend .fa-icons-general;
+  content: "\f052";
+}
+.ion-ios-fa-chevron-left:before {
+  @extend .fa-icons-general;
+  content: "\f053";
+}
+.ion-ios-fa-chevron-right:before {
+  @extend .fa-icons-general;
+  content: "\f054";
+}
+.ion-ios-fa-plus-circle:before {
+  @extend .fa-icons-general;
+  content: "\f055";
+}
+.ion-ios-fa-minus-circle:before {
+  @extend .fa-icons-general;
+  content: "\f056";
+}
+.ion-ios-fa-times-circle:before {
+  @extend .fa-icons-general;
+  content: "\f057";
+}
+.ion-ios-fa-check-circle:before {
+  @extend .fa-icons-general;
+  content: "\f058";
+}
+.ion-ios-fa-question-circle:before {
+  @extend .fa-icons-general;
+  content: "\f059";
+}
+.ion-ios-fa-info-circle:before {
+  @extend .fa-icons-general;
+  content: "\f05a";
+}
+.ion-ios-fa-crosshairs:before {
+  @extend .fa-icons-general;
+  content: "\f05b";
+}
+.ion-ios-fa-times-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f05c";
+}
+.ion-ios-fa-check-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f05d";
+}
+.ion-ios-fa-ban:before {
+  @extend .fa-icons-general;
+  content: "\f05e";
+}
+.ion-ios-fa-arrow-left:before {
+  @extend .fa-icons-general;
+  content: "\f060";
+}
+.ion-ios-fa-arrow-right:before {
+  @extend .fa-icons-general;
+  content: "\f061";
+}
+.ion-ios-fa-arrow-up:before {
+  @extend .fa-icons-general;
+  content: "\f062";
+}
+.ion-ios-fa-arrow-down:before {
+  @extend .fa-icons-general;
+  content: "\f063";
+}
+.ion-ios-fa-mail-forward:before,
+.ion-ios-fa-share:before {
+  @extend .fa-icons-general;
+  content: "\f064";
+}
+.ion-ios-fa-expand:before {
+  @extend .fa-icons-general;
+  content: "\f065";
+}
+.ion-ios-fa-compress:before {
+  @extend .fa-icons-general;
+  content: "\f066";
+}
+.ion-ios-fa-plus:before {
+  @extend .fa-icons-general;
+  content: "\f067";
+}
+.ion-ios-fa-minus:before {
+  @extend .fa-icons-general;
+  content: "\f068";
+}
+.ion-ios-fa-asterisk:before {
+  @extend .fa-icons-general;
+  content: "\f069";
+}
+.ion-ios-fa-exclamation-circle:before {
+  @extend .fa-icons-general;
+  content: "\f06a";
+}
+.ion-ios-fa-gift:before {
+  @extend .fa-icons-general;
+  content: "\f06b";
+}
+.ion-ios-fa-leaf:before {
+  @extend .fa-icons-general;
+  content: "\f06c";
+}
+.ion-ios-fa-fire:before {
+  @extend .fa-icons-general;
+  content: "\f06d";
+}
+.ion-ios-fa-eye:before {
+  @extend .fa-icons-general;
+  content: "\f06e";
+}
+.ion-ios-fa-eye-slash:before {
+  @extend .fa-icons-general;
+  content: "\f070";
+}
+.ion-ios-fa-warning:before,
+.ion-ios-fa-exclamation-triangle:before {
+  @extend .fa-icons-general;
+  content: "\f071";
+}
+.ion-ios-fa-plane:before {
+  @extend .fa-icons-general;
+  content: "\f072";
+}
+.ion-ios-fa-calendar:before {
+  @extend .fa-icons-general;
+  content: "\f073";
+}
+.ion-ios-fa-random:before {
+  @extend .fa-icons-general;
+  content: "\f074";
+}
+.ion-ios-fa-comment:before {
+  @extend .fa-icons-general;
+  content: "\f075";
+}
+.ion-ios-fa-magnet:before {
+  @extend .fa-icons-general;
+  content: "\f076";
+}
+.ion-ios-fa-chevron-up:before {
+  @extend .fa-icons-general;
+  content: "\f077";
+}
+.ion-ios-fa-chevron-down:before {
+  @extend .fa-icons-general;
+  content: "\f078";
+}
+.ion-ios-fa-retweet:before {
+  @extend .fa-icons-general;
+  content: "\f079";
+}
+.ion-ios-fa-shopping-cart:before {
+  @extend .fa-icons-general;
+  content: "\f07a";
+}
+.ion-ios-fa-folder:before {
+  @extend .fa-icons-general;
+  content: "\f07b";
+}
+.ion-ios-fa-folder-open:before {
+  @extend .fa-icons-general;
+  content: "\f07c";
+}
+.ion-ios-fa-arrows-v:before {
+  @extend .fa-icons-general;
+  content: "\f07d";
+}
+.ion-ios-fa-arrows-h:before {
+  @extend .fa-icons-general;
+  content: "\f07e";
+}
+.ion-ios-fa-bar-chart-o:before,
+.ion-ios-fa-bar-chart:before {
+  @extend .fa-icons-general;
+  content: "\f080";
+}
+.ion-ios-fa-twitter-square:before {
+  @extend .fa-icons-general;
+  content: "\f081";
+}
+.ion-ios-fa-facebook-square:before {
+  @extend .fa-icons-general;
+  content: "\f082";
+}
+.ion-ios-fa-camera-retro:before {
+  @extend .fa-icons-general;
+  content: "\f083";
+}
+.ion-ios-fa-key:before {
+  @extend .fa-icons-general;
+  content: "\f084";
+}
+.ion-ios-fa-gears:before,
+.ion-ios-fa-cogs:before {
+  @extend .fa-icons-general;
+  content: "\f085";
+}
+.ion-ios-fa-comments:before {
+  @extend .fa-icons-general;
+  content: "\f086";
+}
+.ion-ios-fa-thumbs-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f087";
+}
+.ion-ios-fa-thumbs-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f088";
+}
+.ion-ios-fa-star-half:before {
+  @extend .fa-icons-general;
+  content: "\f089";
+}
+.ion-ios-fa-heart-o:before {
+  @extend .fa-icons-general;
+  content: "\f08a";
+}
+.ion-ios-fa-sign-out:before {
+  @extend .fa-icons-general;
+  content: "\f08b";
+}
+.ion-ios-fa-linkedin-square:before {
+  @extend .fa-icons-general;
+  content: "\f08c";
+}
+.ion-ios-fa-thumb-tack:before {
+  @extend .fa-icons-general;
+  content: "\f08d";
+}
+.ion-ios-fa-external-link:before {
+  @extend .fa-icons-general;
+  content: "\f08e";
+}
+.ion-ios-fa-sign-in:before {
+  @extend .fa-icons-general;
+  content: "\f090";
+}
+.ion-ios-fa-trophy:before {
+  @extend .fa-icons-general;
+  content: "\f091";
+}
+.ion-ios-fa-github-square:before {
+  @extend .fa-icons-general;
+  content: "\f092";
+}
+.ion-ios-fa-upload:before {
+  @extend .fa-icons-general;
+  content: "\f093";
+}
+.ion-ios-fa-lemon-o:before {
+  @extend .fa-icons-general;
+  content: "\f094";
+}
+.ion-ios-fa-phone:before {
+  @extend .fa-icons-general;
+  content: "\f095";
+}
+.ion-ios-fa-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f096";
+}
+.ion-ios-fa-bookmark-o:before {
+  @extend .fa-icons-general;
+  content: "\f097";
+}
+.ion-ios-fa-phone-square:before {
+  @extend .fa-icons-general;
+  content: "\f098";
+}
+.ion-ios-fa-twitter:before {
+  @extend .fa-icons-general;
+  content: "\f099";
+}
+.ion-ios-fa-facebook-f:before,
+.ion-ios-fa-facebook:before {
+  @extend .fa-icons-general;
+  content: "\f09a";
+}
+.ion-ios-fa-github:before {
+  @extend .fa-icons-general;
+  content: "\f09b";
+}
+.ion-ios-fa-unlock:before {
+  @extend .fa-icons-general;
+  content: "\f09c";
+}
+.ion-ios-fa-credit-card:before {
+  @extend .fa-icons-general;
+  content: "\f09d";
+}
+.ion-ios-fa-feed:before,
+.ion-ios-fa-rss:before {
+  @extend .fa-icons-general;
+  content: "\f09e";
+}
+.ion-ios-fa-hdd-o:before {
+  @extend .fa-icons-general;
+  content: "\f0a0";
+}
+.ion-ios-fa-bullhorn:before {
+  @extend .fa-icons-general;
+  content: "\f0a1";
+}
+.ion-ios-fa-bell:before {
+  @extend .fa-icons-general;
+  content: "\f0f3";
+}
+.ion-ios-fa-certificate:before {
+  @extend .fa-icons-general;
+  content: "\f0a3";
+}
+.ion-ios-fa-hand-o-right:before {
+  @extend .fa-icons-general;
+  content: "\f0a4";
+}
+.ion-ios-fa-hand-o-left:before {
+  @extend .fa-icons-general;
+  content: "\f0a5";
+}
+.ion-ios-fa-hand-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f0a6";
+}
+.ion-ios-fa-hand-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f0a7";
+}
+.ion-ios-fa-arrow-circle-left:before {
+  @extend .fa-icons-general;
+  content: "\f0a8";
+}
+.ion-ios-fa-arrow-circle-right:before {
+  @extend .fa-icons-general;
+  content: "\f0a9";
+}
+.ion-ios-fa-arrow-circle-up:before {
+  @extend .fa-icons-general;
+  content: "\f0aa";
+}
+.ion-ios-fa-arrow-circle-down:before {
+  @extend .fa-icons-general;
+  content: "\f0ab";
+}
+.ion-ios-fa-globe:before {
+  @extend .fa-icons-general;
+  content: "\f0ac";
+}
+.ion-ios-fa-wrench:before {
+  @extend .fa-icons-general;
+  content: "\f0ad";
+}
+.ion-ios-fa-tasks:before {
+  @extend .fa-icons-general;
+  content: "\f0ae";
+}
+.ion-ios-fa-filter:before {
+  @extend .fa-icons-general;
+  content: "\f0b0";
+}
+.ion-ios-fa-briefcase:before {
+  @extend .fa-icons-general;
+  content: "\f0b1";
+}
+.ion-ios-fa-arrows-alt:before {
+  @extend .fa-icons-general;
+  content: "\f0b2";
+}
+.ion-ios-fa-group:before,
+.ion-ios-fa-users:before {
+  @extend .fa-icons-general;
+  content: "\f0c0";
+}
+.ion-ios-fa-chain:before,
+.ion-ios-fa-link:before {
+  @extend .fa-icons-general;
+  content: "\f0c1";
+}
+.ion-ios-fa-cloud:before {
+  @extend .fa-icons-general;
+  content: "\f0c2";
+}
+.ion-ios-fa-flask:before {
+  @extend .fa-icons-general;
+  content: "\f0c3";
+}
+.ion-ios-fa-cut:before,
+.ion-ios-fa-scissors:before {
+  @extend .fa-icons-general;
+  content: "\f0c4";
+}
+.ion-ios-fa-copy:before,
+.ion-ios-fa-files-o:before {
+  @extend .fa-icons-general;
+  content: "\f0c5";
+}
+.ion-ios-fa-paperclip:before {
+  @extend .fa-icons-general;
+  content: "\f0c6";
+}
+.ion-ios-fa-save:before,
+.ion-ios-fa-floppy-o:before {
+  @extend .fa-icons-general;
+  content: "\f0c7";
+}
+.ion-ios-fa-square:before {
+  @extend .fa-icons-general;
+  content: "\f0c8";
+}
+.ion-ios-fa-navicon:before,
+.ion-ios-fa-reorder:before,
+.ion-ios-fa-bars:before {
+  @extend .fa-icons-general;
+  content: "\f0c9";
+}
+.ion-ios-fa-list-ul:before {
+  @extend .fa-icons-general;
+  content: "\f0ca";
+}
+.ion-ios-fa-list-ol:before {
+  @extend .fa-icons-general;
+  content: "\f0cb";
+}
+.ion-ios-fa-strikethrough:before {
+  @extend .fa-icons-general;
+  content: "\f0cc";
+}
+.ion-ios-fa-underline:before {
+  @extend .fa-icons-general;
+  content: "\f0cd";
+}
+.ion-ios-fa-table:before {
+  @extend .fa-icons-general;
+  content: "\f0ce";
+}
+.ion-ios-fa-magic:before {
+  @extend .fa-icons-general;
+  content: "\f0d0";
+}
+.ion-ios-fa-truck:before {
+  @extend .fa-icons-general;
+  content: "\f0d1";
+}
+.ion-ios-fa-pinterest:before {
+  @extend .fa-icons-general;
+  content: "\f0d2";
+}
+.ion-ios-fa-pinterest-square:before {
+  @extend .fa-icons-general;
+  content: "\f0d3";
+}
+.ion-ios-fa-google-plus-square:before {
+  @extend .fa-icons-general;
+  content: "\f0d4";
+}
+.ion-ios-fa-google-plus:before {
+  @extend .fa-icons-general;
+  content: "\f0d5";
+}
+.ion-ios-fa-money:before {
+  @extend .fa-icons-general;
+  content: "\f0d6";
+}
+.ion-ios-fa-caret-down:before {
+  @extend .fa-icons-general;
+  content: "\f0d7";
+}
+.ion-ios-fa-caret-up:before {
+  @extend .fa-icons-general;
+  content: "\f0d8";
+}
+.ion-ios-fa-caret-left:before {
+  @extend .fa-icons-general;
+  content: "\f0d9";
+}
+.ion-ios-fa-caret-right:before {
+  @extend .fa-icons-general;
+  content: "\f0da";
+}
+.ion-ios-fa-columns:before {
+  @extend .fa-icons-general;
+  content: "\f0db";
+}
+.ion-ios-fa-unsorted:before,
+.ion-ios-fa-sort:before {
+  @extend .fa-icons-general;
+  content: "\f0dc";
+}
+.ion-ios-fa-sort-down:before,
+.ion-ios-fa-sort-desc:before {
+  @extend .fa-icons-general;
+  content: "\f0dd";
+}
+.ion-ios-fa-sort-up:before,
+.ion-ios-fa-sort-asc:before {
+  @extend .fa-icons-general;
+  content: "\f0de";
+}
+.ion-ios-fa-envelope:before {
+  @extend .fa-icons-general;
+  content: "\f0e0";
+}
+.ion-ios-fa-linkedin:before {
+  @extend .fa-icons-general;
+  content: "\f0e1";
+}
+.ion-ios-fa-rotate-left:before,
+.ion-ios-fa-undo:before {
+  @extend .fa-icons-general;
+  content: "\f0e2";
+}
+.ion-ios-fa-legal:before,
+.ion-ios-fa-gavel:before {
+  @extend .fa-icons-general;
+  content: "\f0e3";
+}
+.ion-ios-fa-dashboard:before,
+.ion-ios-fa-tachometer:before {
+  @extend .fa-icons-general;
+  content: "\f0e4";
+}
+.ion-ios-fa-comment-o:before {
+  @extend .fa-icons-general;
+  content: "\f0e5";
+}
+.ion-ios-fa-comments-o:before {
+  @extend .fa-icons-general;
+  content: "\f0e6";
+}
+.ion-ios-fa-flash:before,
+.ion-ios-fa-bolt:before {
+  @extend .fa-icons-general;
+  content: "\f0e7";
+}
+.ion-ios-fa-sitemap:before {
+  @extend .fa-icons-general;
+  content: "\f0e8";
+}
+.ion-ios-fa-umbrella:before {
+  @extend .fa-icons-general;
+  content: "\f0e9";
+}
+.ion-ios-fa-paste:before,
+.ion-ios-fa-clipboard:before {
+  @extend .fa-icons-general;
+  content: "\f0ea";
+}
+.ion-ios-fa-lightbulb-o:before {
+  @extend .fa-icons-general;
+  content: "\f0eb";
+}
+.ion-ios-fa-exchange:before {
+  @extend .fa-icons-general;
+  content: "\f0ec";
+}
+.ion-ios-fa-cloud-download:before {
+  @extend .fa-icons-general;
+  content: "\f0ed";
+}
+.ion-ios-fa-cloud-upload:before {
+  @extend .fa-icons-general;
+  content: "\f0ee";
+}
+.ion-ios-fa-user-md:before {
+  @extend .fa-icons-general;
+  content: "\f0f0";
+}
+.ion-ios-fa-stethoscope:before {
+  @extend .fa-icons-general;
+  content: "\f0f1";
+}
+.ion-ios-fa-suitcase:before {
+  @extend .fa-icons-general;
+  content: "\f0f2";
+}
+.ion-ios-fa-bell-o:before {
+  @extend .fa-icons-general;
+  content: "\f0a2";
+}
+.ion-ios-fa-coffee:before {
+  @extend .fa-icons-general;
+  content: "\f0f4";
+}
+.ion-ios-fa-cutlery:before {
+  @extend .fa-icons-general;
+  content: "\f0f5";
+}
+.ion-ios-fa-file-text-o:before {
+  @extend .fa-icons-general;
+  content: "\f0f6";
+}
+.ion-ios-fa-building-o:before {
+  @extend .fa-icons-general;
+  content: "\f0f7";
+}
+.ion-ios-fa-hospital-o:before {
+  @extend .fa-icons-general;
+  content: "\f0f8";
+}
+.ion-ios-fa-ambulance:before {
+  @extend .fa-icons-general;
+  content: "\f0f9";
+}
+.ion-ios-fa-medkit:before {
+  @extend .fa-icons-general;
+  content: "\f0fa";
+}
+.ion-ios-fa-fighter-jet:before {
+  @extend .fa-icons-general;
+  content: "\f0fb";
+}
+.ion-ios-fa-beer:before {
+  @extend .fa-icons-general;
+  content: "\f0fc";
+}
+.ion-ios-fa-h-square:before {
+  @extend .fa-icons-general;
+  content: "\f0fd";
+}
+.ion-ios-fa-plus-square:before {
+  @extend .fa-icons-general;
+  content: "\f0fe";
+}
+.ion-ios-fa-angle-double-left:before {
+  @extend .fa-icons-general;
+  content: "\f100";
+}
+.ion-ios-fa-angle-double-right:before {
+  @extend .fa-icons-general;
+  content: "\f101";
+}
+.ion-ios-fa-angle-double-up:before {
+  @extend .fa-icons-general;
+  content: "\f102";
+}
+.ion-ios-fa-angle-double-down:before {
+  @extend .fa-icons-general;
+  content: "\f103";
+}
+.ion-ios-fa-angle-left:before {
+  @extend .fa-icons-general;
+  content: "\f104";
+}
+.ion-ios-fa-angle-right:before {
+  @extend .fa-icons-general;
+  content: "\f105";
+}
+.ion-ios-fa-angle-up:before {
+  @extend .fa-icons-general;
+  content: "\f106";
+}
+.ion-ios-fa-angle-down:before {
+  @extend .fa-icons-general;
+  content: "\f107";
+}
+.ion-ios-fa-desktop:before {
+  @extend .fa-icons-general;
+  content: "\f108";
+}
+.ion-ios-fa-laptop:before {
+  @extend .fa-icons-general;
+  content: "\f109";
+}
+.ion-ios-fa-tablet:before {
+  @extend .fa-icons-general;
+  content: "\f10a";
+}
+.ion-ios-fa-mobile-phone:before,
+.ion-ios-fa-mobile:before {
+  @extend .fa-icons-general;
+  content: "\f10b";
+}
+.ion-ios-fa-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f10c";
+}
+.ion-ios-fa-quote-left:before {
+  @extend .fa-icons-general;
+  content: "\f10d";
+}
+.ion-ios-fa-quote-right:before {
+  @extend .fa-icons-general;
+  content: "\f10e";
+}
+.ion-ios-fa-spinner:before {
+  @extend .fa-icons-general;
+  content: "\f110";
+}
+.ion-ios-fa-circle:before {
+  @extend .fa-icons-general;
+  content: "\f111";
+}
+.ion-ios-fa-mail-reply:before,
+.ion-ios-fa-reply:before {
+  @extend .fa-icons-general;
+  content: "\f112";
+}
+.ion-ios-fa-github-alt:before {
+  @extend .fa-icons-general;
+  content: "\f113";
+}
+.ion-ios-fa-folder-o:before {
+  @extend .fa-icons-general;
+  content: "\f114";
+}
+.ion-ios-fa-folder-open-o:before {
+  @extend .fa-icons-general;
+  content: "\f115";
+}
+.ion-ios-fa-smile-o:before {
+  @extend .fa-icons-general;
+  content: "\f118";
+}
+.ion-ios-fa-frown-o:before {
+  @extend .fa-icons-general;
+  content: "\f119";
+}
+.ion-ios-fa-meh-o:before {
+  @extend .fa-icons-general;
+  content: "\f11a";
+}
+.ion-ios-fa-gamepad:before {
+  @extend .fa-icons-general;
+  content: "\f11b";
+}
+.ion-ios-fa-keyboard-o:before {
+  @extend .fa-icons-general;
+  content: "\f11c";
+}
+.ion-ios-fa-flag-o:before {
+  @extend .fa-icons-general;
+  content: "\f11d";
+}
+.ion-ios-fa-flag-checkered:before {
+  @extend .fa-icons-general;
+  content: "\f11e";
+}
+.ion-ios-fa-terminal:before {
+  @extend .fa-icons-general;
+  content: "\f120";
+}
+.ion-ios-fa-code:before {
+  @extend .fa-icons-general;
+  content: "\f121";
+}
+.ion-ios-fa-mail-reply-all:before,
+.ion-ios-fa-reply-all:before {
+  @extend .fa-icons-general;
+  content: "\f122";
+}
+.ion-ios-fa-star-half-empty:before,
+.ion-ios-fa-star-half-full:before,
+.ion-ios-fa-star-half-o:before {
+  @extend .fa-icons-general;
+  content: "\f123";
+}
+.ion-ios-fa-location-arrow:before {
+  @extend .fa-icons-general;
+  content: "\f124";
+}
+.ion-ios-fa-crop:before {
+  @extend .fa-icons-general;
+  content: "\f125";
+}
+.ion-ios-fa-code-fork:before {
+  @extend .fa-icons-general;
+  content: "\f126";
+}
+.ion-ios-fa-unlink:before,
+.ion-ios-fa-chain-broken:before {
+  @extend .fa-icons-general;
+  content: "\f127";
+}
+.ion-ios-fa-question:before {
+  @extend .fa-icons-general;
+  content: "\f128";
+}
+.ion-ios-fa-info:before {
+  @extend .fa-icons-general;
+  content: "\f129";
+}
+.ion-ios-fa-exclamation:before {
+  @extend .fa-icons-general;
+  content: "\f12a";
+}
+.ion-ios-fa-superscript:before {
+  @extend .fa-icons-general;
+  content: "\f12b";
+}
+.ion-ios-fa-subscript:before {
+  @extend .fa-icons-general;
+  content: "\f12c";
+}
+.ion-ios-fa-eraser:before {
+  @extend .fa-icons-general;
+  content: "\f12d";
+}
+.ion-ios-fa-puzzle-piece:before {
+  @extend .fa-icons-general;
+  content: "\f12e";
+}
+.ion-ios-fa-microphone:before {
+  @extend .fa-icons-general;
+  content: "\f130";
+}
+.ion-ios-fa-microphone-slash:before {
+  @extend .fa-icons-general;
+  content: "\f131";
+}
+.ion-ios-fa-shield:before {
+  @extend .fa-icons-general;
+  content: "\f132";
+}
+.ion-ios-fa-calendar-o:before {
+  @extend .fa-icons-general;
+  content: "\f133";
+}
+.ion-ios-fa-fire-extinguisher:before {
+  @extend .fa-icons-general;
+  content: "\f134";
+}
+.ion-ios-fa-rocket:before {
+  @extend .fa-icons-general;
+  content: "\f135";
+}
+.ion-ios-fa-maxcdn:before {
+  @extend .fa-icons-general;
+  content: "\f136";
+}
+.ion-ios-fa-chevron-circle-left:before {
+  @extend .fa-icons-general;
+  content: "\f137";
+}
+.ion-ios-fa-chevron-circle-right:before {
+  @extend .fa-icons-general;
+  content: "\f138";
+}
+.ion-ios-fa-chevron-circle-up:before {
+  @extend .fa-icons-general;
+  content: "\f139";
+}
+.ion-ios-fa-chevron-circle-down:before {
+  @extend .fa-icons-general;
+  content: "\f13a";
+}
+.ion-ios-fa-html5:before {
+  @extend .fa-icons-general;
+  content: "\f13b";
+}
+.ion-ios-fa-css3:before {
+  @extend .fa-icons-general;
+  content: "\f13c";
+}
+.ion-ios-fa-anchor:before {
+  @extend .fa-icons-general;
+  content: "\f13d";
+}
+.ion-ios-fa-unlock-alt:before {
+  @extend .fa-icons-general;
+  content: "\f13e";
+}
+.ion-ios-fa-bullseye:before {
+  @extend .fa-icons-general;
+  content: "\f140";
+}
+.ion-ios-fa-ellipsis-h:before {
+  @extend .fa-icons-general;
+  content: "\f141";
+}
+.ion-ios-fa-ellipsis-v:before {
+  @extend .fa-icons-general;
+  content: "\f142";
+}
+.ion-ios-fa-rss-square:before {
+  @extend .fa-icons-general;
+  content: "\f143";
+}
+.ion-ios-fa-play-circle:before {
+  @extend .fa-icons-general;
+  content: "\f144";
+}
+.ion-ios-fa-ticket:before {
+  @extend .fa-icons-general;
+  content: "\f145";
+}
+.ion-ios-fa-minus-square:before {
+  @extend .fa-icons-general;
+  content: "\f146";
+}
+.ion-ios-fa-minus-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f147";
+}
+.ion-ios-fa-level-up:before {
+  @extend .fa-icons-general;
+  content: "\f148";
+}
+.ion-ios-fa-level-down:before {
+  @extend .fa-icons-general;
+  content: "\f149";
+}
+.ion-ios-fa-check-square:before {
+  @extend .fa-icons-general;
+  content: "\f14a";
+}
+.ion-ios-fa-pencil-square:before {
+  @extend .fa-icons-general;
+  content: "\f14b";
+}
+.ion-ios-fa-external-link-square:before {
+  @extend .fa-icons-general;
+  content: "\f14c";
+}
+.ion-ios-fa-share-square:before {
+  @extend .fa-icons-general;
+  content: "\f14d";
+}
+.ion-ios-fa-compass:before {
+  @extend .fa-icons-general;
+  content: "\f14e";
+}
+.ion-ios-fa-toggle-down:before,
+.ion-ios-fa-caret-square-o-down:before {
+  @extend .fa-icons-general;
+  content: "\f150";
+}
+.ion-ios-fa-toggle-up:before,
+.ion-ios-fa-caret-square-o-up:before {
+  @extend .fa-icons-general;
+  content: "\f151";
+}
+.ion-ios-fa-toggle-right:before,
+.ion-ios-fa-caret-square-o-right:before {
+  @extend .fa-icons-general;
+  content: "\f152";
+}
+.ion-ios-fa-euro:before,
+.ion-ios-fa-eur:before {
+  @extend .fa-icons-general;
+  content: "\f153";
+}
+.ion-ios-fa-gbp:before {
+  @extend .fa-icons-general;
+  content: "\f154";
+}
+.ion-ios-fa-dollar:before,
+.ion-ios-fa-usd:before {
+  @extend .fa-icons-general;
+  content: "\f155";
+}
+.ion-ios-fa-rupee:before,
+.ion-ios-fa-inr:before {
+  @extend .fa-icons-general;
+  content: "\f156";
+}
+.ion-ios-fa-cny:before,
+.ion-ios-fa-rmb:before,
+.ion-ios-fa-yen:before,
+.ion-ios-fa-jpy:before {
+  @extend .fa-icons-general;
+  content: "\f157";
+}
+.ion-ios-fa-ruble:before,
+.ion-ios-fa-rouble:before,
+.ion-ios-fa-rub:before {
+  @extend .fa-icons-general;
+  content: "\f158";
+}
+.ion-ios-fa-won:before,
+.ion-ios-fa-krw:before {
+  @extend .fa-icons-general;
+  content: "\f159";
+}
+.ion-ios-fa-bitcoin:before,
+.ion-ios-fa-btc:before {
+  @extend .fa-icons-general;
+  content: "\f15a";
+}
+.ion-ios-fa-file:before {
+  @extend .fa-icons-general;
+  content: "\f15b";
+}
+.ion-ios-fa-file-text:before {
+  @extend .fa-icons-general;
+  content: "\f15c";
+}
+.ion-ios-fa-sort-alpha-asc:before {
+  @extend .fa-icons-general;
+  content: "\f15d";
+}
+.ion-ios-fa-sort-alpha-desc:before {
+  @extend .fa-icons-general;
+  content: "\f15e";
+}
+.ion-ios-fa-sort-amount-asc:before {
+  @extend .fa-icons-general;
+  content: "\f160";
+}
+.ion-ios-fa-sort-amount-desc:before {
+  @extend .fa-icons-general;
+  content: "\f161";
+}
+.ion-ios-fa-sort-numeric-asc:before {
+  @extend .fa-icons-general;
+  content: "\f162";
+}
+.ion-ios-fa-sort-numeric-desc:before {
+  @extend .fa-icons-general;
+  content: "\f163";
+}
+.ion-ios-fa-thumbs-up:before {
+  @extend .fa-icons-general;
+  content: "\f164";
+}
+.ion-ios-fa-thumbs-down:before {
+  @extend .fa-icons-general;
+  content: "\f165";
+}
+.ion-ios-fa-youtube-square:before {
+  @extend .fa-icons-general;
+  content: "\f166";
+}
+.ion-ios-fa-youtube:before {
+  @extend .fa-icons-general;
+  content: "\f167";
+}
+.ion-ios-fa-xing:before {
+  @extend .fa-icons-general;
+  content: "\f168";
+}
+.ion-ios-fa-xing-square:before {
+  @extend .fa-icons-general;
+  content: "\f169";
+}
+.ion-ios-fa-youtube-play:before {
+  @extend .fa-icons-general;
+  content: "\f16a";
+}
+.ion-ios-fa-dropbox:before {
+  @extend .fa-icons-general;
+  content: "\f16b";
+}
+.ion-ios-fa-stack-overflow:before {
+  @extend .fa-icons-general;
+  content: "\f16c";
+}
+.ion-ios-fa-instagram:before {
+  @extend .fa-icons-general;
+  content: "\f16d";
+}
+.ion-ios-fa-flickr:before {
+  @extend .fa-icons-general;
+  content: "\f16e";
+}
+.ion-ios-fa-adn:before {
+  @extend .fa-icons-general;
+  content: "\f170";
+}
+.ion-ios-fa-bitbucket:before {
+  @extend .fa-icons-general;
+  content: "\f171";
+}
+.ion-ios-fa-bitbucket-square:before {
+  @extend .fa-icons-general;
+  content: "\f172";
+}
+.ion-ios-fa-tumblr:before {
+  @extend .fa-icons-general;
+  content: "\f173";
+}
+.ion-ios-fa-tumblr-square:before {
+  @extend .fa-icons-general;
+  content: "\f174";
+}
+.ion-ios-fa-long-arrow-down:before {
+  @extend .fa-icons-general;
+  content: "\f175";
+}
+.ion-ios-fa-long-arrow-up:before {
+  @extend .fa-icons-general;
+  content: "\f176";
+}
+.ion-ios-fa-long-arrow-left:before {
+  @extend .fa-icons-general;
+  content: "\f177";
+}
+.ion-ios-fa-long-arrow-right:before {
+  @extend .fa-icons-general;
+  content: "\f178";
+}
+.ion-ios-fa-apple:before {
+  @extend .fa-icons-general;
+  content: "\f179";
+}
+.ion-ios-fa-windows:before {
+  @extend .fa-icons-general;
+  content: "\f17a";
+}
+.ion-ios-fa-android:before {
+  @extend .fa-icons-general;
+  content: "\f17b";
+}
+.ion-ios-fa-linux:before {
+  @extend .fa-icons-general;
+  content: "\f17c";
+}
+.ion-ios-fa-dribbble:before {
+  @extend .fa-icons-general;
+  content: "\f17d";
+}
+.ion-ios-fa-skype:before {
+  @extend .fa-icons-general;
+  content: "\f17e";
+}
+.ion-ios-fa-foursquare:before {
+  @extend .fa-icons-general;
+  content: "\f180";
+}
+.ion-ios-fa-trello:before {
+  @extend .fa-icons-general;
+  content: "\f181";
+}
+.ion-ios-fa-female:before {
+  @extend .fa-icons-general;
+  content: "\f182";
+}
+.ion-ios-fa-male:before {
+  @extend .fa-icons-general;
+  content: "\f183";
+}
+.ion-ios-fa-gittip:before,
+.ion-ios-fa-gratipay:before {
+  @extend .fa-icons-general;
+  content: "\f184";
+}
+.ion-ios-fa-sun-o:before {
+  @extend .fa-icons-general;
+  content: "\f185";
+}
+.ion-ios-fa-moon-o:before {
+  @extend .fa-icons-general;
+  content: "\f186";
+}
+.ion-ios-fa-archive:before {
+  @extend .fa-icons-general;
+  content: "\f187";
+}
+.ion-ios-fa-bug:before {
+  @extend .fa-icons-general;
+  content: "\f188";
+}
+.ion-ios-fa-vk:before {
+  @extend .fa-icons-general;
+  content: "\f189";
+}
+.ion-ios-fa-weibo:before {
+  @extend .fa-icons-general;
+  content: "\f18a";
+}
+.ion-ios-fa-renren:before {
+  @extend .fa-icons-general;
+  content: "\f18b";
+}
+.ion-ios-fa-pagelines:before {
+  @extend .fa-icons-general;
+  content: "\f18c";
+}
+.ion-ios-fa-stack-exchange:before {
+  @extend .fa-icons-general;
+  content: "\f18d";
+}
+.ion-ios-fa-arrow-circle-o-right:before {
+  @extend .fa-icons-general;
+  content: "\f18e";
+}
+.ion-ios-fa-arrow-circle-o-left:before {
+  @extend .fa-icons-general;
+  content: "\f190";
+}
+.ion-ios-fa-toggle-left:before,
+.ion-ios-fa-caret-square-o-left:before {
+  @extend .fa-icons-general;
+  content: "\f191";
+}
+.ion-ios-fa-dot-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f192";
+}
+.ion-ios-fa-wheelchair:before {
+  @extend .fa-icons-general;
+  content: "\f193";
+}
+.ion-ios-fa-vimeo-square:before {
+  @extend .fa-icons-general;
+  content: "\f194";
+}
+.ion-ios-fa-turkish-lira:before,
+.ion-ios-fa-try:before {
+  @extend .fa-icons-general;
+  content: "\f195";
+}
+.ion-ios-fa-plus-square-o:before {
+  @extend .fa-icons-general;
+  content: "\f196";
+}
+.ion-ios-fa-space-shuttle:before {
+  @extend .fa-icons-general;
+  content: "\f197";
+}
+.ion-ios-fa-slack:before {
+  @extend .fa-icons-general;
+  content: "\f198";
+}
+.ion-ios-fa-envelope-square:before {
+  @extend .fa-icons-general;
+  content: "\f199";
+}
+.ion-ios-fa-wordpress:before {
+  @extend .fa-icons-general;
+  content: "\f19a";
+}
+.ion-ios-fa-openid:before {
+  @extend .fa-icons-general;
+  content: "\f19b";
+}
+.ion-ios-fa-institution:before,
+.ion-ios-fa-bank:before,
+.ion-ios-fa-university:before {
+  @extend .fa-icons-general;
+  content: "\f19c";
+}
+.ion-ios-fa-mortar-board:before,
+.ion-ios-fa-graduation-cap:before {
+  @extend .fa-icons-general;
+  content: "\f19d";
+}
+.ion-ios-fa-yahoo:before {
+  @extend .fa-icons-general;
+  content: "\f19e";
+}
+.ion-ios-fa-google:before {
+  @extend .fa-icons-general;
+  content: "\f1a0";
+}
+.ion-ios-fa-reddit:before {
+  @extend .fa-icons-general;
+  content: "\f1a1";
+}
+.ion-ios-fa-reddit-square:before {
+  @extend .fa-icons-general;
+  content: "\f1a2";
+}
+.ion-ios-fa-stumbleupon-circle:before {
+  @extend .fa-icons-general;
+  content: "\f1a3";
+}
+.ion-ios-fa-stumbleupon:before {
+  @extend .fa-icons-general;
+  content: "\f1a4";
+}
+.ion-ios-fa-delicious:before {
+  @extend .fa-icons-general;
+  content: "\f1a5";
+}
+.ion-ios-fa-digg:before {
+  @extend .fa-icons-general;
+  content: "\f1a6";
+}
+.ion-ios-fa-pied-piper:before {
+  @extend .fa-icons-general;
+  content: "\f1a7";
+}
+.ion-ios-fa-pied-piper-alt:before {
+  @extend .fa-icons-general;
+  content: "\f1a8";
+}
+.ion-ios-fa-drupal:before {
+  @extend .fa-icons-general;
+  content: "\f1a9";
+}
+.ion-ios-fa-joomla:before {
+  @extend .fa-icons-general;
+  content: "\f1aa";
+}
+.ion-ios-fa-language:before {
+  @extend .fa-icons-general;
+  content: "\f1ab";
+}
+.ion-ios-fa-fax:before {
+  @extend .fa-icons-general;
+  content: "\f1ac";
+}
+.ion-ios-fa-building:before {
+  @extend .fa-icons-general;
+  content: "\f1ad";
+}
+.ion-ios-fa-child:before {
+  @extend .fa-icons-general;
+  content: "\f1ae";
+}
+.ion-ios-fa-paw:before {
+  @extend .fa-icons-general;
+  content: "\f1b0";
+}
+.ion-ios-fa-spoon:before {
+  @extend .fa-icons-general;
+  content: "\f1b1";
+}
+.ion-ios-fa-cube:before {
+  @extend .fa-icons-general;
+  content: "\f1b2";
+}
+.ion-ios-fa-cubes:before {
+  @extend .fa-icons-general;
+  content: "\f1b3";
+}
+.ion-ios-fa-behance:before {
+  @extend .fa-icons-general;
+  content: "\f1b4";
+}
+.ion-ios-fa-behance-square:before {
+  @extend .fa-icons-general;
+  content: "\f1b5";
+}
+.ion-ios-fa-steam:before {
+  @extend .fa-icons-general;
+  content: "\f1b6";
+}
+.ion-ios-fa-steam-square:before {
+  @extend .fa-icons-general;
+  content: "\f1b7";
+}
+.ion-ios-fa-recycle:before {
+  @extend .fa-icons-general;
+  content: "\f1b8";
+}
+.ion-ios-fa-automobile:before,
+.ion-ios-fa-car:before {
+  @extend .fa-icons-general;
+  content: "\f1b9";
+}
+.ion-ios-fa-cab:before,
+.ion-ios-fa-taxi:before {
+  @extend .fa-icons-general;
+  content: "\f1ba";
+}
+.ion-ios-fa-tree:before {
+  @extend .fa-icons-general;
+  content: "\f1bb";
+}
+.ion-ios-fa-spotify:before {
+  @extend .fa-icons-general;
+  content: "\f1bc";
+}
+.ion-ios-fa-deviantart:before {
+  @extend .fa-icons-general;
+  content: "\f1bd";
+}
+.ion-ios-fa-soundcloud:before {
+  @extend .fa-icons-general;
+  content: "\f1be";
+}
+.ion-ios-fa-database:before {
+  @extend .fa-icons-general;
+  content: "\f1c0";
+}
+.ion-ios-fa-file-pdf-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c1";
+}
+.ion-ios-fa-file-word-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c2";
+}
+.ion-ios-fa-file-excel-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c3";
+}
+.ion-ios-fa-file-powerpoint-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c4";
+}
+.ion-ios-fa-file-photo-o:before,
+.ion-ios-fa-file-picture-o:before,
+.ion-ios-fa-file-image-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c5";
+}
+.ion-ios-fa-file-zip-o:before,
+.ion-ios-fa-file-archive-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c6";
+}
+.ion-ios-fa-file-sound-o:before,
+.ion-ios-fa-file-audio-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c7";
+}
+.ion-ios-fa-file-movie-o:before,
+.ion-ios-fa-file-video-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c8";
+}
+.ion-ios-fa-file-code-o:before {
+  @extend .fa-icons-general;
+  content: "\f1c9";
+}
+.ion-ios-fa-vine:before {
+  @extend .fa-icons-general;
+  content: "\f1ca";
+}
+.ion-ios-fa-codepen:before {
+  @extend .fa-icons-general;
+  content: "\f1cb";
+}
+.ion-ios-fa-jsfiddle:before {
+  @extend .fa-icons-general;
+  content: "\f1cc";
+}
+.ion-ios-fa-life-bouy:before,
+.ion-ios-fa-life-buoy:before,
+.ion-ios-fa-life-saver:before,
+.ion-ios-fa-support:before,
+.ion-ios-fa-life-ring:before {
+  @extend .fa-icons-general;
+  content: "\f1cd";
+}
+.ion-ios-fa-circle-o-notch:before {
+  @extend .fa-icons-general;
+  content: "\f1ce";
+}
+.ion-ios-fa-ra:before,
+.ion-ios-fa-rebel:before {
+  @extend .fa-icons-general;
+  content: "\f1d0";
+}
+.ion-ios-fa-ge:before,
+.ion-ios-fa-empire:before {
+  @extend .fa-icons-general;
+  content: "\f1d1";
+}
+.ion-ios-fa-git-square:before {
+  @extend .fa-icons-general;
+  content: "\f1d2";
+}
+.ion-ios-fa-git:before {
+  @extend .fa-icons-general;
+  content: "\f1d3";
+}
+.ion-ios-fa-y-combinator-square:before,
+.ion-ios-fa-yc-square:before,
+.ion-ios-fa-hacker-news:before {
+  @extend .fa-icons-general;
+  content: "\f1d4";
+}
+.ion-ios-fa-tencent-weibo:before {
+  @extend .fa-icons-general;
+  content: "\f1d5";
+}
+.ion-ios-fa-qq:before {
+  @extend .fa-icons-general;
+  content: "\f1d6";
+}
+.ion-ios-fa-wechat:before,
+.ion-ios-fa-weixin:before {
+  @extend .fa-icons-general;
+  content: "\f1d7";
+}
+.ion-ios-fa-send:before,
+.ion-ios-fa-paper-plane:before {
+  @extend .fa-icons-general;
+  content: "\f1d8";
+}
+.ion-ios-fa-send-o:before,
+.ion-ios-fa-paper-plane-o:before {
+  @extend .fa-icons-general;
+  content: "\f1d9";
+}
+.ion-ios-fa-history:before {
+  @extend .fa-icons-general;
+  content: "\f1da";
+}
+.ion-ios-fa-circle-thin:before {
+  @extend .fa-icons-general;
+  content: "\f1db";
+}
+.ion-ios-fa-header:before {
+  @extend .fa-icons-general;
+  content: "\f1dc";
+}
+.ion-ios-fa-paragraph:before {
+  @extend .fa-icons-general;
+  content: "\f1dd";
+}
+.ion-ios-fa-sliders:before {
+  @extend .fa-icons-general;
+  content: "\f1de";
+}
+.ion-ios-fa-share-alt:before {
+  @extend .fa-icons-general;
+  content: "\f1e0";
+}
+.ion-ios-fa-share-alt-square:before {
+  @extend .fa-icons-general;
+  content: "\f1e1";
+}
+.ion-ios-fa-bomb:before {
+  @extend .fa-icons-general;
+  content: "\f1e2";
+}
+.ion-ios-fa-soccer-ball-o:before,
+.ion-ios-fa-futbol-o:before {
+  @extend .fa-icons-general;
+  content: "\f1e3";
+}
+.ion-ios-fa-tty:before {
+  @extend .fa-icons-general;
+  content: "\f1e4";
+}
+.ion-ios-fa-binoculars:before {
+  @extend .fa-icons-general;
+  content: "\f1e5";
+}
+.ion-ios-fa-plug:before {
+  @extend .fa-icons-general;
+  content: "\f1e6";
+}
+.ion-ios-fa-slideshare:before {
+  @extend .fa-icons-general;
+  content: "\f1e7";
+}
+.ion-ios-fa-twitch:before {
+  @extend .fa-icons-general;
+  content: "\f1e8";
+}
+.ion-ios-fa-yelp:before {
+  @extend .fa-icons-general;
+  content: "\f1e9";
+}
+.ion-ios-fa-newspaper-o:before {
+  @extend .fa-icons-general;
+  content: "\f1ea";
+}
+.ion-ios-fa-wifi:before {
+  @extend .fa-icons-general;
+  content: "\f1eb";
+}
+.ion-ios-fa-calculator:before {
+  @extend .fa-icons-general;
+  content: "\f1ec";
+}
+.ion-ios-fa-paypal:before {
+  @extend .fa-icons-general;
+  content: "\f1ed";
+}
+.ion-ios-fa-google-wallet:before {
+  @extend .fa-icons-general;
+  content: "\f1ee";
+}
+.ion-ios-fa-cc-visa:before {
+  @extend .fa-icons-general;
+  content: "\f1f0";
+}
+.ion-ios-fa-cc-mastercard:before {
+  @extend .fa-icons-general;
+  content: "\f1f1";
+}
+.ion-ios-fa-cc-discover:before {
+  @extend .fa-icons-general;
+  content: "\f1f2";
+}
+.ion-ios-fa-cc-amex:before {
+  @extend .fa-icons-general;
+  content: "\f1f3";
+}
+.ion-ios-fa-cc-paypal:before {
+  @extend .fa-icons-general;
+  content: "\f1f4";
+}
+.ion-ios-fa-cc-stripe:before {
+  @extend .fa-icons-general;
+  content: "\f1f5";
+}
+.ion-ios-fa-bell-slash:before {
+  @extend .fa-icons-general;
+  content: "\f1f6";
+}
+.ion-ios-fa-bell-slash-o:before {
+  @extend .fa-icons-general;
+  content: "\f1f7";
+}
+.ion-ios-fa-trash:before {
+  @extend .fa-icons-general;
+  content: "\f1f8";
+}
+.ion-ios-fa-copyright:before {
+  @extend .fa-icons-general;
+  content: "\f1f9";
+}
+.ion-ios-fa-at:before {
+  @extend .fa-icons-general;
+  content: "\f1fa";
+}
+.ion-ios-fa-eyedropper:before {
+  @extend .fa-icons-general;
+  content: "\f1fb";
+}
+.ion-ios-fa-paint-brush:before {
+  @extend .fa-icons-general;
+  content: "\f1fc";
+}
+.ion-ios-fa-birthday-cake:before {
+  @extend .fa-icons-general;
+  content: "\f1fd";
+}
+.ion-ios-fa-area-chart:before {
+  @extend .fa-icons-general;
+  content: "\f1fe";
+}
+.ion-ios-fa-pie-chart:before {
+  @extend .fa-icons-general;
+  content: "\f200";
+}
+.ion-ios-fa-line-chart:before {
+  @extend .fa-icons-general;
+  content: "\f201";
+}
+.ion-ios-fa-lastfm:before {
+  @extend .fa-icons-general;
+  content: "\f202";
+}
+.ion-ios-fa-lastfm-square:before {
+  @extend .fa-icons-general;
+  content: "\f203";
+}
+.ion-ios-fa-toggle-off:before {
+  @extend .fa-icons-general;
+  content: "\f204";
+}
+.ion-ios-fa-toggle-on:before {
+  @extend .fa-icons-general;
+  content: "\f205";
+}
+.ion-ios-fa-bicycle:before {
+  @extend .fa-icons-general;
+  content: "\f206";
+}
+.ion-ios-fa-bus:before {
+  @extend .fa-icons-general;
+  content: "\f207";
+}
+.ion-ios-fa-ioxhost:before {
+  @extend .fa-icons-general;
+  content: "\f208";
+}
+.ion-ios-fa-angellist:before {
+  @extend .fa-icons-general;
+  content: "\f209";
+}
+.ion-ios-fa-cc:before {
+  @extend .fa-icons-general;
+  content: "\f20a";
+}
+.ion-ios-fa-shekel:before,
+.ion-ios-fa-sheqel:before,
+.ion-ios-fa-ils:before {
+  @extend .fa-icons-general;
+  content: "\f20b";
+}
+.ion-ios-fa-meanpath:before {
+  @extend .fa-icons-general;
+  content: "\f20c";
+}
+.ion-ios-fa-buysellads:before {
+  @extend .fa-icons-general;
+  content: "\f20d";
+}
+.ion-ios-fa-connectdevelop:before {
+  @extend .fa-icons-general;
+  content: "\f20e";
+}
+.ion-ios-fa-dashcube:before {
+  @extend .fa-icons-general;
+  content: "\f210";
+}
+.ion-ios-fa-forumbee:before {
+  @extend .fa-icons-general;
+  content: "\f211";
+}
+.ion-ios-fa-leanpub:before {
+  @extend .fa-icons-general;
+  content: "\f212";
+}
+.ion-ios-fa-sellsy:before {
+  @extend .fa-icons-general;
+  content: "\f213";
+}
+.ion-ios-fa-shirtsinbulk:before {
+  @extend .fa-icons-general;
+  content: "\f214";
+}
+.ion-ios-fa-simplybuilt:before {
+  @extend .fa-icons-general;
+  content: "\f215";
+}
+.ion-ios-fa-skyatlas:before {
+  @extend .fa-icons-general;
+  content: "\f216";
+}
+.ion-ios-fa-cart-plus:before {
+  @extend .fa-icons-general;
+  content: "\f217";
+}
+.ion-ios-fa-cart-arrow-down:before {
+  @extend .fa-icons-general;
+  content: "\f218";
+}
+.ion-ios-fa-diamond:before {
+  @extend .fa-icons-general;
+  content: "\f219";
+}
+.ion-ios-fa-ship:before {
+  @extend .fa-icons-general;
+  content: "\f21a";
+}
+.ion-ios-fa-user-secret:before {
+  @extend .fa-icons-general;
+  content: "\f21b";
+}
+.ion-ios-fa-motorcycle:before {
+  @extend .fa-icons-general;
+  content: "\f21c";
+}
+.ion-ios-fa-street-view:before {
+  @extend .fa-icons-general;
+  content: "\f21d";
+}
+.ion-ios-fa-heartbeat:before {
+  @extend .fa-icons-general;
+  content: "\f21e";
+}
+.ion-ios-fa-venus:before {
+  @extend .fa-icons-general;
+  content: "\f221";
+}
+.ion-ios-fa-mars:before {
+  @extend .fa-icons-general;
+  content: "\f222";
+}
+.ion-ios-fa-mercury:before {
+  @extend .fa-icons-general;
+  content: "\f223";
+}
+.ion-ios-fa-intersex:before,
+.ion-ios-fa-transgender:before {
+  @extend .fa-icons-general;
+  content: "\f224";
+}
+.ion-ios-fa-transgender-alt:before {
+  @extend .fa-icons-general;
+  content: "\f225";
+}
+.ion-ios-fa-venus-double:before {
+  @extend .fa-icons-general;
+  content: "\f226";
+}
+.ion-ios-fa-mars-double:before {
+  @extend .fa-icons-general;
+  content: "\f227";
+}
+.ion-ios-fa-venus-mars:before {
+  @extend .fa-icons-general;
+  content: "\f228";
+}
+.ion-ios-fa-mars-stroke:before {
+  @extend .fa-icons-general;
+  content: "\f229";
+}
+.ion-ios-fa-mars-stroke-v:before {
+  @extend .fa-icons-general;
+  content: "\f22a";
+}
+.ion-ios-fa-mars-stroke-h:before {
+  @extend .fa-icons-general;
+  content: "\f22b";
+}
+.ion-ios-fa-neuter:before {
+  @extend .fa-icons-general;
+  content: "\f22c";
+}
+.ion-ios-fa-genderless:before {
+  @extend .fa-icons-general;
+  content: "\f22d";
+}
+.ion-ios-fa-facebook-official:before {
+  @extend .fa-icons-general;
+  content: "\f230";
+}
+.ion-ios-fa-pinterest-p:before {
+  @extend .fa-icons-general;
+  content: "\f231";
+}
+.ion-ios-fa-whatsapp:before {
+  @extend .fa-icons-general;
+  content: "\f232";
+}
+.ion-ios-fa-server:before {
+  @extend .fa-icons-general;
+  content: "\f233";
+}
+.ion-ios-fa-user-plus:before {
+  @extend .fa-icons-general;
+  content: "\f234";
+}
+.ion-ios-fa-user-times:before {
+  @extend .fa-icons-general;
+  content: "\f235";
+}
+.ion-ios-fa-hotel:before,
+.ion-ios-fa-bed:before {
+  @extend .fa-icons-general;
+  content: "\f236";
+}
+.ion-ios-fa-viacoin:before {
+  @extend .fa-icons-general;
+  content: "\f237";
+}
+.ion-ios-fa-train:before {
+  @extend .fa-icons-general;
+  content: "\f238";
+}
+.ion-ios-fa-subway:before {
+  @extend .fa-icons-general;
+  content: "\f239";
+}
+.ion-ios-fa-medium:before {
+  @extend .fa-icons-general;
+  content: "\f23a";
+}
+.ion-ios-fa-yc:before,
+.ion-ios-fa-y-combinator:before {
+  @extend .fa-icons-general;
+  content: "\f23b";
+}
+.ion-ios-fa-optin-monster:before {
+  @extend .fa-icons-general;
+  content: "\f23c";
+}
+.ion-ios-fa-opencart:before {
+  @extend .fa-icons-general;
+  content: "\f23d";
+}
+.ion-ios-fa-expeditedssl:before {
+  @extend .fa-icons-general;
+  content: "\f23e";
+}
+.ion-ios-fa-battery-4:before,
+.ion-ios-fa-battery-full:before {
+  @extend .fa-icons-general;
+  content: "\f240";
+}
+.ion-ios-fa-battery-3:before,
+.ion-ios-fa-battery-three-quarters:before {
+  @extend .fa-icons-general;
+  content: "\f241";
+}
+.ion-ios-fa-battery-2:before,
+.ion-ios-fa-battery-half:before {
+  @extend .fa-icons-general;
+  content: "\f242";
+}
+.ion-ios-fa-battery-1:before,
+.ion-ios-fa-battery-quarter:before {
+  @extend .fa-icons-general;
+  content: "\f243";
+}
+.ion-ios-fa-battery-0:before,
+.ion-ios-fa-battery-empty:before {
+  @extend .fa-icons-general;
+  content: "\f244";
+}
+.ion-ios-fa-mouse-pointer:before {
+  @extend .fa-icons-general;
+  content: "\f245";
+}
+.ion-ios-fa-i-cursor:before {
+  @extend .fa-icons-general;
+  content: "\f246";
+}
+.ion-ios-fa-object-group:before {
+  @extend .fa-icons-general;
+  content: "\f247";
+}
+.ion-ios-fa-object-ungroup:before {
+  @extend .fa-icons-general;
+  content: "\f248";
+}
+.ion-ios-fa-sticky-note:before {
+  @extend .fa-icons-general;
+  content: "\f249";
+}
+.ion-ios-fa-sticky-note-o:before {
+  @extend .fa-icons-general;
+  content: "\f24a";
+}
+.ion-ios-fa-cc-jcb:before {
+  @extend .fa-icons-general;
+  content: "\f24b";
+}
+.ion-ios-fa-cc-diners-club:before {
+  @extend .fa-icons-general;
+  content: "\f24c";
+}
+.ion-ios-fa-clone:before {
+  @extend .fa-icons-general;
+  content: "\f24d";
+}
+.ion-ios-fa-balance-scale:before {
+  @extend .fa-icons-general;
+  content: "\f24e";
+}
+.ion-ios-fa-hourglass-o:before {
+  @extend .fa-icons-general;
+  content: "\f250";
+}
+.ion-ios-fa-hourglass-1:before,
+.ion-ios-fa-hourglass-start:before {
+  @extend .fa-icons-general;
+  content: "\f251";
+}
+.ion-ios-fa-hourglass-2:before,
+.ion-ios-fa-hourglass-half:before {
+  @extend .fa-icons-general;
+  content: "\f252";
+}
+.ion-ios-fa-hourglass-3:before,
+.ion-ios-fa-hourglass-end:before {
+  @extend .fa-icons-general;
+  content: "\f253";
+}
+.ion-ios-fa-hourglass:before {
+  @extend .fa-icons-general;
+  content: "\f254";
+}
+.ion-ios-fa-hand-grab-o:before,
+.ion-ios-fa-hand-rock-o:before {
+  @extend .fa-icons-general;
+  content: "\f255";
+}
+.ion-ios-fa-hand-stop-o:before,
+.ion-ios-fa-hand-paper-o:before {
+  @extend .fa-icons-general;
+  content: "\f256";
+}
+.ion-ios-fa-hand-scissors-o:before {
+  @extend .fa-icons-general;
+  content: "\f257";
+}
+.ion-ios-fa-hand-lizard-o:before {
+  @extend .fa-icons-general;
+  content: "\f258";
+}
+.ion-ios-fa-hand-spock-o:before {
+  @extend .fa-icons-general;
+  content: "\f259";
+}
+.ion-ios-fa-hand-pointer-o:before {
+  @extend .fa-icons-general;
+  content: "\f25a";
+}
+.ion-ios-fa-hand-peace-o:before {
+  @extend .fa-icons-general;
+  content: "\f25b";
+}
+.ion-ios-fa-trademark:before {
+  @extend .fa-icons-general;
+  content: "\f25c";
+}
+.ion-ios-fa-registered:before {
+  @extend .fa-icons-general;
+  content: "\f25d";
+}
+.ion-ios-fa-creative-commons:before {
+  @extend .fa-icons-general;
+  content: "\f25e";
+}
+.ion-ios-fa-gg:before {
+  @extend .fa-icons-general;
+  content: "\f260";
+}
+.ion-ios-fa-gg-circle:before {
+  @extend .fa-icons-general;
+  content: "\f261";
+}
+.ion-ios-fa-tripadvisor:before {
+  @extend .fa-icons-general;
+  content: "\f262";
+}
+.ion-ios-fa-odnoklassniki:before {
+  @extend .fa-icons-general;
+  content: "\f263";
+}
+.ion-ios-fa-odnoklassniki-square:before {
+  @extend .fa-icons-general;
+  content: "\f264";
+}
+.ion-ios-fa-get-pocket:before {
+  @extend .fa-icons-general;
+  content: "\f265";
+}
+.ion-ios-fa-wikipedia-w:before {
+  @extend .fa-icons-general;
+  content: "\f266";
+}
+.ion-ios-fa-safari:before {
+  @extend .fa-icons-general;
+  content: "\f267";
+}
+.ion-ios-fa-chrome:before {
+  @extend .fa-icons-general;
+  content: "\f268";
+}
+.ion-ios-fa-firefox:before {
+  @extend .fa-icons-general;
+  content: "\f269";
+}
+.ion-ios-fa-opera:before {
+  @extend .fa-icons-general;
+  content: "\f26a";
+}
+.ion-ios-fa-internet-explorer:before {
+  @extend .fa-icons-general;
+  content: "\f26b";
+}
+.ion-ios-fa-tv:before,
+.ion-ios-fa-television:before {
+  @extend .fa-icons-general;
+  content: "\f26c";
+}
+.ion-ios-fa-contao:before {
+  @extend .fa-icons-general;
+  content: "\f26d";
+}
+.ion-ios-fa-500px:before {
+  @extend .fa-icons-general;
+  content: "\f26e";
+}
+.ion-ios-fa-amazon:before {
+  @extend .fa-icons-general;
+  content: "\f270";
+}
+.ion-ios-fa-calendar-plus-o:before {
+  @extend .fa-icons-general;
+  content: "\f271";
+}
+.ion-ios-fa-calendar-minus-o:before {
+  @extend .fa-icons-general;
+  content: "\f272";
+}
+.ion-ios-fa-calendar-times-o:before {
+  @extend .fa-icons-general;
+  content: "\f273";
+}
+.ion-ios-fa-calendar-check-o:before {
+  @extend .fa-icons-general;
+  content: "\f274";
+}
+.ion-ios-fa-industry:before {
+  @extend .fa-icons-general;
+  content: "\f275";
+}
+.ion-ios-fa-map-pin:before {
+  @extend .fa-icons-general;
+  content: "\f276";
+}
+.ion-ios-fa-map-signs:before {
+  @extend .fa-icons-general;
+  content: "\f277";
+}
+.ion-ios-fa-map-o:before {
+  @extend .fa-icons-general;
+  content: "\f278";
+}
+.ion-ios-fa-map:before {
+  @extend .fa-icons-general;
+  content: "\f279";
+}
+.ion-ios-fa-commenting:before {
+  @extend .fa-icons-general;
+  content: "\f27a";
+}
+.ion-ios-fa-commenting-o:before {
+  @extend .fa-icons-general;
+  content: "\f27b";
+}
+.ion-ios-fa-houzz:before {
+  @extend .fa-icons-general;
+  content: "\f27c";
+}
+.ion-ios-fa-vimeo:before {
+  @extend .fa-icons-general;
+  content: "\f27d";
+}
+.ion-ios-fa-black-tie:before {
+  @extend .fa-icons-general;
+  content: "\f27e";
+}
+.ion-ios-fa-fonticons:before {
+  @extend .fa-icons-general;
+  content: "\f280";
+}
+.ion-ios-fa-reddit-alien:before {
+  @extend .fa-icons-general;
+  content: "\f281";
+}
+.ion-ios-fa-edge:before {
+  @extend .fa-icons-general;
+  content: "\f282";
+}
+.ion-ios-fa-credit-card-alt:before {
+  @extend .fa-icons-general;
+  content: "\f283";
+}
+.ion-ios-fa-codiepie:before {
+  @extend .fa-icons-general;
+  content: "\f284";
+}
+.ion-ios-fa-modx:before {
+  @extend .fa-icons-general;
+  content: "\f285";
+}
+.ion-ios-fa-fort-awesome:before {
+  @extend .fa-icons-general;
+  content: "\f286";
+}
+.ion-ios-fa-usb:before {
+  @extend .fa-icons-general;
+  content: "\f287";
+}
+.ion-ios-fa-product-hunt:before {
+  @extend .fa-icons-general;
+  content: "\f288";
+}
+.ion-ios-fa-mixcloud:before {
+  @extend .fa-icons-general;
+  content: "\f289";
+}
+.ion-ios-fa-scribd:before {
+  @extend .fa-icons-general;
+  content: "\f28a";
+}
+.ion-ios-fa-pause-circle:before {
+  @extend .fa-icons-general;
+  content: "\f28b";
+}
+.ion-ios-fa-pause-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f28c";
+}
+.ion-ios-fa-stop-circle:before {
+  @extend .fa-icons-general;
+  content: "\f28d";
+}
+.ion-ios-fa-stop-circle-o:before {
+  @extend .fa-icons-general;
+  content: "\f28e";
+}
+.ion-ios-fa-shopping-bag:before {
+  @extend .fa-icons-general;
+  content: "\f290";
+}
+.ion-ios-fa-shopping-basket:before {
+  @extend .fa-icons-general;
+  content: "\f291";
+}
+.ion-ios-fa-hashtag:before {
+  @extend .fa-icons-general;
+  content: "\f292";
+}
+.ion-ios-fa-bluetooth:before {
+  @extend .fa-icons-general;
+  content: "\f293";
+}
+.ion-ios-fa-bluetooth-b:before {
+  @extend .fa-icons-general;
+  content: "\f294";
+}
+.ion-ios-fa-percent:before {
+  @extend .fa-icons-general;
+  content: "\f295";
+}

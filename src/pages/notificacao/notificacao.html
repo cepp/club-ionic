@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="fa-bars"></ion-icon>
+    </button>
+    <ion-title>Notificações</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item-group>
+      <ion-item class="notificacao" [class.lido]="notificacao.lido" text-wrap *ngFor="let notificacao of notificacoes" (click)="mostrarNotificacao(notificacao)">
+        <ion-icon [name]="notificacao.lido ? 'fa-bell-o' : 'fa-bell'" item-start small></ion-icon>
+        <h2>{{notificacao.titulo}}</h2>
+        <h5>{{notificacao.data}}</h5>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

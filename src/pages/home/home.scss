@@ -1,0 +1,30 @@
+page-home {
+  .item-md h5 {
+    font-weight: bold;
+    font-size: smaller;
+    padding: 1px;
+  }
+
+  ion-card {
+    img {
+      height: 300px;
+    }
+
+    ion-card-content {
+      .card-content {
+        font-size: small;
+        color: #bababa;
+        padding: 1px;
+      }
+    }
+
+    ion-row {
+      ion-col {
+        button {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
+
+}
